@@ -28,4 +28,4 @@ tags:
  
 ## 开发者文档
 
-[/docs/api#answererwrapper--%E9%A2%98%E5%BA%93%E9%85%8D%E7%BD%AE](/docs/api#answererwrapper--%E9%A2%98%E5%BA%93%E9%85%8D%E7%BD%AE)
+[/docs/更多/api#answererwrapper--%E9%A2%98%E5%BA%93%E9%85%8D%E7%BD%AE](/docs/更多/api#answererwrapper--%E9%A2%98%E5%BA%93%E9%85%8D%E7%BD%AE)

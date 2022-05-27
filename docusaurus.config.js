@@ -9,19 +9,19 @@ const OCS_VERSION = '3.13.0';
 const docs = [
   {
     label: '快速上手',
-    to: 'docs/quickly-start'
+    to: '/docs/quickly-start'
   },
   {
     label: '脚本教程',
-    to: 'docs/script'
+    to: '/docs/script'
   },
   {
     label: '软件教程',
-    to: 'docs/app'
+    to: '/docs/app'
   },
   {
     label: '自动答题教程',
-    to: 'docs/work'
+    to: '/docs/work'
   }
 ];
 
@@ -51,11 +51,11 @@ const community = [
 const more = [
   {
     label: '疑问解答',
-    to: 'docs/FQA'
+    to: '/docs/更多/FQA'
   },
   {
     label: '开发文档',
-    to: 'docs/api'
+    to: '/docs/更多/api'
   },
   {
     label: 'OCS源码',
