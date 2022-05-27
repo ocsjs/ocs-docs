@@ -1,41 +1,27 @@
-# Website
+# OCS 官方文档
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+## [docs.ocsjs.com](https://docs.ocsjs.com) 
 
-### Installation
+如果您有任何的建议可以直接提交PR，或者联系作者邮箱进行文档的整改。
 
-```
-$ yarn
-```
+## 关于
 
-### Local Development
+网站使用 [Docusaurus](https://docusaurus.io/) 进行构建。
 
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
+### 安装
 
 ```
-$ yarn build
+$ npm i
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
+### 本地运行
 
 ```
-$ USE_SSH=true yarn deploy
-```
+$ npm start
+``` 
 
-Not using SSH:
+### 打包
 
 ```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+$ npm build
+``` 
