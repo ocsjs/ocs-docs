@@ -22,7 +22,7 @@ tags:
 
 > 免责声明： 脚本所有的功能均没有向用户收取费用， 如果题库配置需要收费，那么最终解释权归题库配置的提供者所有。 
  
-- [enncy 题库](https://tk.enncy.cn/)  
+- [enncy 题库 https://tk.enncy.cn/](https://tk.enncy.cn/)  
 - 更多题库配置请等待更新... 
 
  
