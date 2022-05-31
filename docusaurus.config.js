@@ -4,7 +4,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-const OCS_VERSION = '3.13.0';
+const OCS_VERSION = '3.16.0';
 
 const docs = [
   {
@@ -93,7 +93,7 @@ const config = {
   favicon: 'https://cdn.ocs.enncy.cn/logo.ico',
 
   scripts: [
-    `https://cdn.ocs.enncy.cn/dist/${OCS_VERSION}/index.min.js`
+    `https://cdn.ocs.enncy.cn/dist/${OCS_VERSION}/index.js`
   ],
 
   // GitHub pages deployment config.

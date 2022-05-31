@@ -4,6 +4,7 @@
 import React from 'react';
 import TOCItems from '@theme/TOCItems';
 import Layout from '@theme/Layout';
+import Tag from '@theme/Tag';
 
 export default function FeatList(): JSX.Element {
   return (
@@ -24,7 +25,11 @@ export default function FeatList(): JSX.Element {
                       <h1>功能列表</h1>
                       <blockquote> 此页面展示OCS所有脚本功能的列表，如果你需要的功能不存在，请联系我们。 </blockquote>
                       <div>
-        当前稳定版本为: {OCS.VERSION}
+                          当前稳定版本为: {OCS.VERSION}
+                      </div>
+
+                      <div>
+                          主要脚本有 : {OCS.definedScripts.map((script, i) => (<code style={{ marginRight: '12px' }} key={i}><a href={'#' + script.name}>{script.name}</a></code>)) }
                       </div>
 
                       <hr/>
@@ -32,13 +37,13 @@ export default function FeatList(): JSX.Element {
                         {
                           OCS.definedScripts.map((script, i) => (
                             <div key={i}>
-                              <h1 className='anchor anchorWithStickyNavbar_node_modules-@docusaurus-theme-classic-lib-next-theme-Heading-styles-module' id={script.name}>{script.name}</h1>
+                              <h1 className='anchor ' id={script.name}>{script.name}</h1>
                               <hr/>
                               <blockquote>共有 {script.routes.length} 个脚本 , {script.panels.length} 个显示窗口 </blockquote>
                               {script.routes.map((route, i) => (
                                 <div key={i}>
                                   <b
-                                    className='anchor anchorWithStickyNavbar_node_modules-@docusaurus-theme-classic-lib-next-theme-Heading-styles-module'
+                                    className='anchor '
                                     id={`${script.name + '-' + route.name}`}
                                     key={i}>
                                     {route.name}
@@ -64,7 +69,14 @@ export default function FeatList(): JSX.Element {
 
                     </div>
                     <div className='col--2'>
-                      <div className='tableOfContents_node_modules-@docusaurus-theme-classic-lib-next-theme-TOC-styles-module thin-scrollbar theme-doc-toc-desktop'>
+                      <div
+                        style={{
+                          overflowY: 'auto',
+                          position: 'sticky',
+                          top: '4rem',
+                          maxHeight: 'calc(100vh - 8rem)'
+                        }}
+                        className='thin-scrollbar theme-doc-toc-desktop'>
                         <TOCItems toc={OCS.definedScripts.map((script, i) => ([
                           {
                             value: script.name,

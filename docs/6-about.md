@@ -14,15 +14,6 @@ title: 关于
 
 
 
-## 交流群
-
--   OCS 助手交流群  976662217 （已满）
--   OCS 助手交流群（2）  940881245 （已满）
--   [OCS 助手交流群（3）](https://qm.qq.com/cgi-bin/qm/qr?k=Y9NXoI1MYzuMaEm3_tvMPY8jPxPCxiCk&jump_from=webapi) 688788798
--   [OCS 软件内测群](https://qm.qq.com/cgi-bin/qm/qr?k=yesrH-t4_-pCsn29uRuGRz7ShDLZ16d8&jump_from=webapi) 641347645
-
-
-
 ## 项目背景
 
 试想当你上完一天的专业课之后，回到宿舍还要面对无数的网课，一个个视频手动去播放，一页一页去翻阅PPT。
@@ -36,7 +27,11 @@ title: 关于
 
 ## 历史进程
 
+### 2022/05/28
 
+开源项目名称由 `online-course-script` 改成 `ocsjs`
+
+整体项目由 [`enncy`](https://github.com/enncy) 账号转移至组织账号 [`ocsjs`](https://github.com/ocsjs)
 
 ### 2022/02/08 
 
