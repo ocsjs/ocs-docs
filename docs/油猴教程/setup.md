@@ -23,7 +23,7 @@ title: 油猴安装教程
 
 1.下载作者提供的第三方油猴文件
 
-[https://cdn.ocs.enncy.cn/resources/Tampermonkey.zip](https://cdn.ocs.enncy.cn/resources/Tampermonkey.zip)
+[https://cdn.ocsjs.com/resources/Tampermonkey.zip](https://cdn.ocsjs.com/resources/Tampermonkey.zip)
 
 2.将整个文件解压缩
 

@@ -98,7 +98,7 @@ pnpm build:core
 
 > 请自行根据版本调整链接
 
-官方CDN: [https://cdn.ocs.enncy.cn/dist/3.7.4/index.min.js](https://cdn.ocs.enncy.cn/dist/3.10.0/index.min.js)
+官方CDN: [https://cdn.ocsjs.com/dist/3.7.4/index.min.js](https://cdn.ocsjs.com/dist/3.10.0/index.min.js)
 
 JSD: [https://cdn.jsdelivr.net/npm/ocsjs@3.7.4/dist/index.min.js](https://cdn.jsdelivr.net/npm/ocsjs@3.7.4/dist/index.min.js)
 

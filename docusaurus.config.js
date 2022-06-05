@@ -90,10 +90,10 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'https://cdn.ocs.enncy.cn/logo.ico',
+  favicon: 'https://cdn.ocsjs.com/logo.ico',
 
   scripts: [
-    `https://cdn.ocs.enncy.cn/dist/${OCS_VERSION}/index.js`
+    `https://cdn.ocsjs.com/dist/${OCS_VERSION}/index.js`
   ],
 
   // GitHub pages deployment config.
@@ -143,7 +143,7 @@ const config = {
         title: 'OCS网课助手',
         logo: {
           alt: 'Logo',
-          src: 'https://cdn.ocs.enncy.cn/logo.png'
+          src: 'https://cdn.ocsjs.com/logo.png'
         },
         items: [
           {

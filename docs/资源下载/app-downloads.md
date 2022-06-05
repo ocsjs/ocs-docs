@@ -1,7 +1,7 @@
 ---
 title: 软件下载
 ---
- 
+- [OCS软件 v1.4.0](#ocs软件-v140)
 - [OCS软件 v1.3.0](#ocs软件-v130)
 - [OCS软件 v1.2.1](#ocs软件-v121)
 
@@ -19,9 +19,18 @@ title: 软件下载
 
 ![image](https://user-images.githubusercontent.com/50533276/161433054-25eb3847-87c5-4908-a012-14c104f4d2fa.png)
 
+### OCS软件 `v1.4.0`
+
+[ocs-1.4.0-setup-win-x64.exe](https://cdn.ocsjs.com/resources/ocs-1.4.0-setup-win-x64.exe)
+
+- 新增用户脚本，可自定义网络脚本添加到本地脚本，并自动载入本地脚本，极大拓展软件功能。
+- 文件中新增图片预览一栏，定时更新页面图像，无需在多个浏览器中切换查看。
+- 删除超星智慧树的其他登录，新增自定义链接进入。
+- 优化 script 工作线程，规范代码，修复人工错误导致的无限递归。
+- 新增软件服务端，使脚本可读取软件信息。
 ### OCS软件 `v1.3.0`
 
-[https://cdn.ocs.enncy.cn/resources/ocs-1.3.0-setup-win-x64.exe](https://cdn.ocs.enncy.cn/resources/ocs-1.3.0-setup-win-x64.exe)
+[ocs-1.3.0-setup-win-x64.exe](https://cdn.ocsjs.com/resources/ocs-1.3.0-setup-win-x64.exe)
 
 - 自动获取浏览器路径
 - 新增火狐浏览器支持
@@ -30,7 +39,7 @@ title: 软件下载
 
 ### OCS软件 `v1.2.1`
 
-[https://cdn.ocs.enncy.cn/resources/ocs-1.2.1-setup-win-x64.exe](https://cdn.ocs.enncy.cn/resources/ocs-1.2.1-setup-win-x64.exe)
+[ocs-1.2.1-setup-win-x64.exe](https://cdn.ocsjs.com/resources/ocs-1.2.1-setup-win-x64.exe)
 
 - 自动更新
 - 实时通知
