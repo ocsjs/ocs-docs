@@ -4,7 +4,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-const OCS_VERSION = '3.16.0';
+const OCS_VERSION = '3.17.4';
 
 const docs = [
   {

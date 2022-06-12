@@ -5,6 +5,7 @@ import React from 'react';
 import TOCItems from '@theme/TOCItems';
 import Layout from '@theme/Layout';
 import Tag from '@theme/Tag';
+import Loading from '@theme/Loading';
 
 export default function FeatList(): JSX.Element {
   return (
@@ -14,7 +15,7 @@ export default function FeatList(): JSX.Element {
       {
         typeof OCS === 'undefined'
           ? (
-            <span>页面加载中</span>
+            <h1 style={{ textAlign: 'center', marginTop: '100px' }}>页面加载中...</h1>
           )
           : (
             <>
