@@ -154,7 +154,7 @@ const config = {
           {
             label: '功能列表',
             position: 'right',
-            to: '/feat-list'
+            to: '/docs/feat-list'
           },
           {
             label: '快速上手',
