@@ -3,9 +3,13 @@
 
 import React from 'react';
 import Layout from '@theme/Layout';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 export default function FeatList(): JSX.Element {
-  window.location.href = '/docs/feat-list';
+  if (ExecutionEnvironment.canUseDOM) {
+    window.location.href = '/docs/feat-list';
+  }
+
   return (
     <Layout
       description='功能列表'
