@@ -90,7 +90,7 @@ pnpm build:core
 [油猴 API](https://www.tampermonkey.net/documentation.php)
 
 ```js
-// @require      file://E:\xxx\xxx\ocs\dist\index.min.js
+// @require      file://E:\xxx\xxx\ocs\dist\ocs.user.js
 // @resource     OCS_STYLE file://E:\xxx\xxx\ocs\dist\style.css
 ```
 
