@@ -85,7 +85,7 @@ pnpm build:core
 
 ## 本地调试
 
-在本地浏览器安装油猴，并且 `@require ` 引用本地打包好的文件，即可本地调试。
+在本地浏览器安装油猴，首先在 `chrome://extensions` 页面，把油猴的 `允许访问文件网址` 勾上。并且 `@require ` 引用本地打包好的文件，即可本地调试。
 
 [油猴 API](https://www.tampermonkey.net/documentation.php)
 
