@@ -61,14 +61,14 @@ pnpm build
 # 进入 web 渲染进程
 cd packages/web
 # 运行 vue 项目
-npm run dev
+pnpm run dev
 ```
 
 ```sh
 # 进入 app 主进程
 cd packages/app
 # 运行 electron 软件
-npm run dev
+pnpm run dev
 ```
 
 ## 软件打包
@@ -85,12 +85,12 @@ pnpm build:core
 
 ## 本地调试
 
-在本地浏览器安装油猴，并且 `@require ` 引用本地打包好的文件，即可本地调试。
+在本地浏览器安装油猴，首先在 `chrome://extensions` 页面，把油猴的 `允许访问文件网址` 勾上。并且 `@require ` 引用本地打包好的文件，即可本地调试。
 
 [油猴 API](https://www.tampermonkey.net/documentation.php)
 
 ```js
-// @require      file://E:\xxx\xxx\ocs\dist\index.min.js
+// @require      file://E:\xxx\xxx\ocs\dist\ocs.user.js
 // @resource     OCS_STYLE file://E:\xxx\xxx\ocs\dist\style.css
 ```
 
