@@ -61,14 +61,14 @@ pnpm build
 # 进入 web 渲染进程
 cd packages/web
 # 运行 vue 项目
-npm run dev
+pnpm run dev
 ```
 
 ```sh
 # 进入 app 主进程
 cd packages/app
 # 运行 electron 软件
-npm run dev
+pnpm run dev
 ```
 
 ## 软件打包
