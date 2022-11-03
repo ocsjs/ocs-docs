@@ -1,3 +1,13 @@
 module.exports = {
-  presets: [require.resolve('@docusaurus/core/lib/babel/preset')],
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        googleAnalytics: {
+          trackingID: 'UA-141789564-1',
+          anonymizeIP: true
+        }
+      }
+    ]
+  ]
 };
