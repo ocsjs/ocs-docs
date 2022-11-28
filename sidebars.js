@@ -21,12 +21,12 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: 'doc',
-      label: '快速上手',
+      label: '使用教程',
       id: 'quickly-start'
     },
     {
       type: 'doc',
-      label: '关于',
+      label: '关于OCS',
       id: 'about'
     },
     {

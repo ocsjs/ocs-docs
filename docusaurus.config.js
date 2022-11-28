@@ -8,7 +8,7 @@ const OCS_VERSION = '3.17.4';
 
 const docs = [
   {
-    label: '快速上手',
+    label: '使用教程',
     to: '/docs/quickly-start'
   },
   {
@@ -77,7 +77,7 @@ const config = {
   customFields: {
     actions: [
       {
-        label: '快速上手',
+        label: '戳我查看👉  使用教程',
         href: '/docs/quickly-start'
       }
 
@@ -157,7 +157,7 @@ const config = {
             to: '/docs/feat-list'
           },
           {
-            label: '快速上手',
+            label: '使用教程',
             position: 'right',
             to: '/docs/quickly-start'
           },
