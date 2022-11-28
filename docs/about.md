@@ -35,7 +35,7 @@ hide_title: true
 
 所有有关的公告通知都在此发布，也可以和小伙伴们一起聊天讨论。
 
-![QQ频道二维码](https://cdn.ocsjs.com/public/images/qq_pindao.jpg)
+<img src="https://cdn.ocsjs.com/public/images/qq_pindao.jpg" width="360" />
 
 **QQ群**
 

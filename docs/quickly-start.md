@@ -16,3 +16,10 @@ title: 快速上手
 
 [更新教程](/docs/update)  —— 介绍脚本和软件应该如何更新版本
 
+**OCS官方 QQ频道**
+
+所有有关的公告通知都在此发布，也可以和小伙伴们一起聊天讨论。
+其他交流方式请在 “关于” 教程中查看。
+
+<img src="https://cdn.ocsjs.com/public/images/qq_pindao.jpg" width="360" />
+

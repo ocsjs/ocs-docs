@@ -1,13 +1,5 @@
+/* eslint-disable comma-dangle */
 module.exports = {
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        googleAnalytics: {
-          trackingID: 'UA-141789564-1',
-          anonymizeIP: true
-        }
-      }
-    ]
-  ]
+  // eslint-disable-next-line quotes
+  presets: [require.resolve("@docusaurus/core/lib/babel/preset")],
 };
