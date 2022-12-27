@@ -8,7 +8,7 @@ title: 脚本下载
 
 - [脚本托管网站 —— (脚本猫)](https://scriptcat.org/script-show-page/367)
 
-- [脚本托管网站 —— (greasyfork)](https://greasyfork.org/zh-CN/scripts/442075-ocs-网课助手)
+- [脚本托管网站 —— (greasyfork)](https://greasyfork.org/zh-CN/scripts/457151-ocs-%E7%BD%91%E8%AF%BE%E5%8A%A9%E6%89%8B)
  
  
 ## 点击按钮安装
