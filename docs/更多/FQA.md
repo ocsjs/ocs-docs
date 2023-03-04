@@ -38,20 +38,37 @@ title: 疑问解答
 
 例如： 
 
-你的超星域名为 `https://xxx.xxx.xxx.net/xxxxxx` 
+你的学校超星网站为 `https://xxxxx.net/xxxx` ，那么 `xxxxx.net` 这个就是网站域名  
 
-请在代码里面添加 `// @match *://*.net/*`
+1.打开右上角的脚本管理器，并且打开脚本进行编辑。
 
-油猴例子 : 
+2.在代码里面添加 `// @match *://*.[网站域名]/*` （把括号里面替换成真实域名）
+
+例子 : 
 
 ```js
+// ==UserScript==
+// @name       				OCS 网课助手
+// @version    				xxx
+// @description				OCS(online-course-script) 网课助手，xxxxxxxxxxxxx
+// @author     				enncy
+// @license    				MIT
+// @match      				*://*.zhihuishu.com/*
+// @match      				*://*.chaoxing.com/*
+// @match      				*://*.edu.cn/*
+// @match      				*://*.org.cn/*
+// @match                   *://*.xxxxx.net/*                         <-- 回车新建一行，然后在这一行写
+// @grant      				GM_info
+// @grant      				GM_getTab
 ...
-// @match        *://*.chaoxing.com/*
-// @match        *://*.edu.cn/*
-// @match        *://*.org.cn/*
-// @match        *://*.net/*
 ...
+...
+... 剩下代码不用动
 ```
+
+3.添加后，点击左上角的“编辑-保存”
+
+4.重新进入超星页面即可
 
 
 ### `为什么开了倍速没反应`
