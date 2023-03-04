@@ -152,11 +152,6 @@ const config = {
             to: '/'
           },
           {
-            label: '功能列表',
-            position: 'right',
-            to: '/docs/feat-list'
-          },
-          {
             label: '使用教程',
             position: 'right',
             to: '/docs/quickly-start'

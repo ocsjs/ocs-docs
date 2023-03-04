@@ -30,11 +30,6 @@ const sidebars = {
       id: 'about'
     },
     {
-      type: 'doc',
-      label: '功能列表',
-      id: 'feat-list'
-    },
-    {
       type: 'category',
       label: '全部教程',
       items: ['script', 'app', 'work', 'update'],
@@ -42,8 +37,8 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '油猴教程',
-      items: ['油猴教程/setup'],
+      label: '脚本管理器',
+      items: ['脚本管理器/scriptcat', '脚本管理器/tampermonkey'],
       collapsed: false
     },
     {
