@@ -10,7 +10,13 @@ tags:
  
 **脚本更新**
 
-脚本是哪里下载的，就去哪里更新，请看： [脚本下载教程](/docs/资源下载/script-downloads.md)
+脚本是哪里下载的，就去哪里更新
+
+- [脚本猫: https://scriptcat.org/script-show-page/367](https://scriptcat.org/script-show-page/367)
+
+- [greasyfork: https://greasyfork.org/zh-CN/scripts/457151](https://greasyfork.org/zh-CN/scripts/457151)
+ 
+
 
 **软件更新**
 

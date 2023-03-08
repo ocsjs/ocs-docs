@@ -5,7 +5,35 @@ title: 软件下载
 
 
 
+:::danger
+
+
+`2.0` 以及之后的版本将不再支持 `win10` 以下的系统 ， 请 `win7/8` 系统的用户使用1.4.0版本的软件。
+
+如果想使用 2.0 版本需升级系统至 win10 或者 win11。
+
+
+:::
+
+
+## 下载须知
+
+如果 edge 下载后弹出类似的框
+
+![image](https://user-images.githubusercontent.com/50533276/161432995-215f870c-b8e6-463e-b666-5583e8934ccd.png)
+
+点击 
+
+![image](https://user-images.githubusercontent.com/50533276/161433046-51cd59a8-9b8c-40de-83ee-936ddbde332d.png)
+
+选择保留即可
+
+![image](https://user-images.githubusercontent.com/50533276/161433054-25eb3847-87c5-4908-a012-14c104f4d2fa.png)
+
+
+
 ## 软件下载列表
+
 
 ### OCS软件 `v2.0.0`
  
@@ -77,17 +105,3 @@ downloads/
  
 
 ---
-
-## 下载须知
-
-如果 edge 下载后弹出类似的框
-
-![image](https://user-images.githubusercontent.com/50533276/161432995-215f870c-b8e6-463e-b666-5583e8934ccd.png)
-
-点击 
-
-![image](https://user-images.githubusercontent.com/50533276/161433046-51cd59a8-9b8c-40de-83ee-936ddbde332d.png)
-
-选择保留即可
-
-![image](https://user-images.githubusercontent.com/50533276/161433054-25eb3847-87c5-4908-a012-14c104f4d2fa.png)

@@ -2,13 +2,13 @@
 title: 脚本下载
 ---
 
-## 打开脚本托管网站
+## 脚本安装链接
 
 (网络不好的请使用脚本猫)
 
-- [脚本托管网站 —— (脚本猫)](https://scriptcat.org/script-show-page/367)
+- [脚本猫: https://scriptcat.org/script-show-page/367](https://scriptcat.org/script-show-page/367)
 
-- [脚本托管网站 —— (greasyfork)](https://greasyfork.org/zh-CN/scripts/457151-ocs-%E7%BD%91%E8%AF%BE%E5%8A%A9%E6%89%8B)
+- [greasyfork: https://greasyfork.org/zh-CN/scripts/457151](https://greasyfork.org/zh-CN/scripts/457151)
  
  
 ## 点击按钮安装
