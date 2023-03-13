@@ -83,10 +83,15 @@ title: 软件下载
 ## OCR验证码识别模块
 
 > 需要搭配软件 v2.0.0 使用，用于自动登录时的验证码识别。
+> 如果没有批量登录，批量创建账号的需求可以不用，毕竟只有几个浏览器的话手动输入验证码跟自动识别没什么区别。
 
 下载链接：[https://cdn.ocsjs.com/app/download/ocr.zip](https://cdn.ocsjs.com/app/download/ocr.zip)
 
-1.下载后打开软件左侧的 ”设置“ 
+如果不会解压可以下载已经整合OCR的软件：[ocs-2.0.5-setup-win-x64-ocr整合包.exe](https://cdn.ocsjs.com/app/download/ocs-2.0.5-setup-win-x64-ocr整合包.exe)
+
+**模块解压教程**
+
+1.下载识别模块后打开软件左侧的 ”设置“ 
 
 2.点击“文件下载路径”
 
