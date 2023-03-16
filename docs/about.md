@@ -33,7 +33,10 @@ hide_title: true
 
 QQ 官方频道： **OCS 网课助手** （直接在频道里搜索或者扫描二维码）
 
-![qq频道二维码](https://cdn.ocsjs.com/public/images/qq_pindao.jpg)
+<img   src="https://cdn.ocsjs.com/public/images/qq_pindao.jpg" alt="qq频道二维码"  width="200">
+
+
+-----
 
 **QQ 群**
 
