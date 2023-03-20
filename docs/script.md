@@ -46,7 +46,7 @@ tags:
 
  
 
-- <a href="/docs/脚本管理器/tampermonkey" target="_blank"> 油猴安装教程 </a>        
+- <a href="/docs/脚本管理器/tampermonkey" target="_blank"> Tampermonkey(篡改猴)安装教程 </a>        
  
 
 ---

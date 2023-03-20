@@ -21,7 +21,7 @@ export const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        OCS 内置类似油猴的功能，实现多个平台的脚本运行，却又互不影响。
+        OCS 内置类似Tampermonkey(篡改猴)的功能，实现多个平台的脚本运行，却又互不影响。
       </>
     )
   },
