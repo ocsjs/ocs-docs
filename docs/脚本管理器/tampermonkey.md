@@ -1,13 +1,13 @@
 ---
-title: 油猴安装教程
+title: Tampermonkey(篡改猴)安装教程
 ---
 
 ## 一键安装
 
 
-打开你的浏览器，安装油猴浏览器拓展， 安装途径有如下：
+打开你的浏览器，安装Tampermonkey(篡改猴)浏览器拓展， 安装途径有如下：
 
--   [油猴官网 ](https://www.tampermonkey.net/) 
+-   [Tampermonkey(篡改猴)官网 ](https://www.tampermonkey.net/) 
 
 ![image](https://user-images.githubusercontent.com/50533276/162660285-063771a2-b923-46e7-a9eb-ddaf513944af.png)
 
@@ -19,9 +19,9 @@ title: 油猴安装教程
 ## 手动安装
 
 
-> 觉得麻烦的话可以下载OCS软件，软件中自带油猴拓展。
+> 觉得麻烦的话可以下载OCS软件，软件中自带Tampermonkey(篡改猴)拓展。
 
-1.下载作者提供的第三方油猴文件
+1.下载作者提供的第三方Tampermonkey(篡改猴)文件
 
 [https://cdn.ocsjs.com/resources/Tampermonkey.zip](https://cdn.ocsjs.com/resources/Tampermonkey.zip)
 
@@ -46,7 +46,7 @@ title: 油猴安装教程
 
 ![image](https://user-images.githubusercontent.com/50533276/161514783-5066d304-3376-4268-8fa1-f2e2bd9a03e6.png)
 
-4.最后选择解压缩后的文件即可实现油猴安装。
+4.最后选择解压缩后的文件即可实现Tampermonkey(篡改猴)安装。
 
 
 ### Edge 浏览器安装
@@ -57,4 +57,4 @@ title: 油猴安装教程
 
 ![image](https://user-images.githubusercontent.com/50533276/161517243-80a2829f-29e9-4aa3-a34a-f3e19d876516.png)
 
-4.最后选择解压缩后的文件即可实现油猴安装。
+4.最后选择解压缩后的文件即可实现Tampermonkey(篡改猴)安装。

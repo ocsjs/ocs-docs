@@ -39,7 +39,7 @@ const community = [
     href: 'https://bbs.tampermonkey.net.cn/'
   },
   {
-    label: '油猴官网',
+    label: 'Tampermonkey(篡改猴)官网',
     href: 'https://tampermonkey.net'
   },
   {
