@@ -12,7 +12,7 @@ export const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        OCS 拥有一套完整的教程系统，以及人性化的操作页面，所见即所得。
+        拥有人性化的操作页面以及使用提示，所见即所得。
       </>
     )
   },
@@ -21,7 +21,7 @@ export const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        OCS 内置类似Tampermonkey(篡改猴)的功能，实现多个平台的脚本运行，却又互不影响。
+        可实现多个平台的脚本运行，但互不影响。
       </>
     )
   },
@@ -30,7 +30,7 @@ export const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        使用 Vue + Typescript 构建项目，拥有强大的交互功能，更加优美的页面。
+        使用 Typescript + WebComponent 构建项目，拥有强大的交互功能，更加优美的页面。
         更容易的更新迭代以及维护。
       </>
     )
