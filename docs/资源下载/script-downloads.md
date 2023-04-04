@@ -3,9 +3,7 @@ title: 脚本下载
 ---
 
 ## 脚本安装链接
-
-(网络不好的请使用脚本猫)
-
+ 
 - [脚本猫: https://scriptcat.org/script-show-page/367](https://scriptcat.org/script-show-page/367)
 
 - [greasyfork: https://greasyfork.org/zh-CN/scripts/457151](https://greasyfork.org/zh-CN/scripts/457151)
