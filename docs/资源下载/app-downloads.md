@@ -35,9 +35,9 @@ title: 软件下载
 ## 软件下载列表
 
 
-### OCS软件 `v2.1.1`
+### OCS软件 `v2.1.3`
  
-[ocs-2.1.0-setup-win-x64.exe](https://cdn.ocsjs.com/app/download/ocs-2.1.1-setup-win-x64.exe)
+[ocs-2.3.0-setup-win-x64.exe](https://cdn.ocsjs.com/app/download/ocs-2.1.3-setup-win-x64.exe)
 
 
 - `浏览器多开/分身`：每个浏览器账号数据互相隔离，可实现多个浏览器不同账号登录。
