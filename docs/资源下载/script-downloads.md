@@ -3,11 +3,17 @@ title: 脚本下载
 ---
 
 ## 脚本安装链接
+
+> 脚本猫或者greasyfork上的脚本访问不了或者被封禁的时候，可以使用官方的脚本安装链接。
  
 - [脚本猫: https://scriptcat.org/script-show-page/367](https://scriptcat.org/script-show-page/367)
 
 - [greasyfork: https://greasyfork.org/zh-CN/scripts/457151](https://greasyfork.org/zh-CN/scripts/457151)
- 
+
+- [OCS官方脚本链接: https://cdn.ocsjs.com/ocs.user.js](https://cdn.ocsjs.com/ocs.user.js)
+
+
+
  
 ## 点击按钮安装
 ![image](https://user-images.githubusercontent.com/50533276/166102106-c1dc53a2-fbe4-43a5-aace-3a914e0737f9.png)
