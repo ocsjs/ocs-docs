@@ -37,20 +37,8 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '脚本管理器',
-      items: ['脚本管理器/scriptcat', '脚本管理器/tampermonkey'],
-      collapsed: false
-    },
-    {
-      type: 'category',
-      label: '资源下载',
-      items: ['资源下载/app-downloads', '资源下载/script-downloads'],
-      collapsed: false
-    },
-    {
-      type: 'category',
       label: '更多',
-      items: ['更多/api', '更多/FQA'],
+      items: ['other/api', 'other/FQA'],
       collapsed: false
     }
   ]
