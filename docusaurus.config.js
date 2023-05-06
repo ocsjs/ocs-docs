@@ -28,11 +28,11 @@ const docs = [
 const community = [
   {
     label: '脚本下载',
-    to: '/docs/资源下载/script-downloads'
+    to: '/docs/resources/script-downloads'
   },
   {
     label: '软件下载',
-    to: '/docs/资源下载/app-downloads'
+    to: '/docs/resources/app-downloads'
   },
   {
     label: '油猴中文网',
@@ -51,11 +51,11 @@ const community = [
 const more = [
   {
     label: '疑问解答',
-    to: '/docs/更多/FQA'
+    to: '/docs/other/FQA'
   },
   {
     label: '开发文档',
-    to: '/docs/更多/api'
+    to: '/docs/other/api'
   },
   {
     label: 'OCS源码',
