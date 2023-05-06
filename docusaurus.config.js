@@ -27,14 +27,6 @@ const docs = [
 
 const community = [
   {
-    label: '脚本下载',
-    to: '/docs/resources/script-downloads'
-  },
-  {
-    label: '软件下载',
-    to: '/docs/resources/app-downloads'
-  },
-  {
     label: '油猴中文网',
     href: 'https://bbs.tampermonkey.net.cn/'
   },
