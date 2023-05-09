@@ -30,4 +30,4 @@ tags:
 ## 开发者文档
 > 小白勿入
 
-[https://docs.ocsjs.com/docs/更多/api#answererwrapper--题库配置](https://docs.ocsjs.com/docs/更多/api#answererwrapper--题库配置)
+[https://docs.ocsjs.com/docs/other/api.md#answererwrapper-题库配置](/docs/other/api.md#answererwrapper-题库配置)
