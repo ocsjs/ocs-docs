@@ -17,7 +17,7 @@ tags:
 <a href="https://www.google.com/intl/zh-CN/chrome/" target="_blank"> <img src="https://user-images.githubusercontent.com/50533276/166101769-cc4cf43a-df3f-479a-bd19-e5d4033961dd.png" width="64" height="64" /> </a>
 
 :::
- 
+
 ### 使用须知
 
 如果是电脑小白，不会安装脚本管理器和脚本，可以下载 OCS 软件： [`OCS软件教程`](/docs/app)  
@@ -29,34 +29,31 @@ tags:
 
 > 🎉 脚本猫是[一之哥](https://blog.icodef.com/)开发的国产脚本管理器哦，多多支持~
 
-- `脚本猫`： <a href="https://docs.scriptcat.org/" target="_blank"> https://docs.scriptcat.org  </a>
+- `脚本猫`： <a href="https://docs.scriptcat.org/" target="_blank"> https://docs.scriptcat.org </a>
 
-- `Tampermonkey`： <a href="https://www.tampermonkey.net/" target="_blank">  https://www.tampermonkey.net/</a>
+- `Tampermonkey`： <a href="https://www.tampermonkey.net/" target="_blank"> https://www.tampermonkey.net/</a>
 
 ---
 
 ### 第二步 安装脚本
 
-> 脚本猫或者 greasyfork 上的脚本访问不了或者被封禁的时候，可以使用官方的脚本安装链接。
+> 直接点进链接，然后点击安装按钮即可  
+> 脚本猫或者 greasyfork 上的脚本访问不了或者被封禁的时候，可以使用官方或 github 的脚本安装链接。
 
-- `脚本猫脚本站`： [https://scriptcat.org/script-show-page/367](https://scriptcat.org/script-show-page/367)
+| 安装来源           | 链接                                                                                                                                       | 说明                                  |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------- |
+| 脚本猫脚本站       | [https://scriptcat.org/script-show-page/367](https://scriptcat.org/script-show-page/367)                                                   | 脚本猫旗下的脚本托管网站              |
+| greasyfork（油叉） | [https://greasyfork.org/zh-CN/scripts/457151](https://greasyfork.org/zh-CN/scripts/457151)                                                 | 油叉是当下比较热门的的脚本托管网站    |
+| github             | [https://github.com/ocsjs/ocsjs/releases/latest/download/ocs.user.js](https://github.com/ocsjs/ocsjs/releases/latest/download/ocs.user.js) | 由 Github Action 自动打包生成（最新） |
+| 官方安装链接       | [https://cdn.ocsjs.com/ocs.user.js](https://cdn.ocsjs.com/ocs.user.js)                                                                     | OCS 官方脚本链接                      |
 
-- `greasyfork（油叉）`： [https://greasyfork.org/zh-CN/scripts/457151](https://greasyfork.org/zh-CN/scripts/457151)
+其他版本安装请看：
 
-- `OCS官方脚本链接`： [https://cdn.ocsjs.com/ocs.user.js](https://cdn.ocsjs.com/ocs.user.js)
+脚本猫脚本站-历史版本：https://scriptcat.org/script-show-page/367/version
 
-#### 点击按钮安装
+greasyfork-历史版本：https://greasyfork.org/zh-CN/scripts/457151/versions
 
-![image](https://user-images.githubusercontent.com/50533276/166102106-c1dc53a2-fbe4-43a5-aace-3a914e0737f9.png)
-![image](https://user-images.githubusercontent.com/50533276/166102182-af28fa1d-15f8-4c5e-aeca-2096fb7c1a39.png)
-
----
-
-#### 选择安装
-
-![image](https://user-images.githubusercontent.com/50533276/162660722-ceeeec1e-d154-48f9-a077-a0e04a89e038.png)
-
----
+github-历史版本：https://github.com/ocsjs/ocsjs/releases
 
 ### 第三步 进入网课页面
 
