@@ -57,7 +57,9 @@ tags:
 
 `handler` 选项是个字符串 ， 使用 Function(string) 构造方法进行解析生成方法，方法传入的第一个参数是 `请求获取到的文本/数据（使用 contentType 定义的数据）`
 
-handler 中需要对请求到的数据进行解析，并返回一个数组，二维数组，或者 undefined
+- handler 中需要对请求到的数据进行解析，并返回一个数组，二维数组，或者 undefined
+
+- 这里注意，如果题库需要返回一个多选题的答案，需要将答案用[`特殊符号`](https://github.com/ocsjs/ocsjs/blob/4.0/packages/core/src/core/worker/utils.ts#L59)分隔 ，而不是将答案写成数组。
 
 ---
 
