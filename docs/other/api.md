@@ -25,12 +25,9 @@ tags:
 
 ```
 + packages/
-    + app       ## 软件主进程源码
-    + web       ## 软件渲染进程源码
-    + common    ## 公共库
-    + utils     ## 工具库
     + core      ## 自研脚本框架
     + scripts   ## 脚本核心实现
+    + utils     ## 工具库
 ```
 
 所有网课学习核心功能都在 `packages/scripts/src/projects/` 文件夹下
