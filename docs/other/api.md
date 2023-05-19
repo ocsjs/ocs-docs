@@ -11,16 +11,9 @@ tags:
 
 ### 项目技术选型
 
-网课脚本：
-
 - 框架：原生 js + WebComponent
 - 脚本：原生 js + WebComponent
-
-桌面软件：
-
-- 主进程： electron + playwright
-- 渲染进程： vue3 + arco.design
-
+ 
 ### 项目结构
 
 ```
