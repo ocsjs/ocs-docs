@@ -53,7 +53,7 @@ tags:
   - 如果题库需要返回一个多选题的答案，需要将答案用[`特殊符号`](https://github.com/ocsjs/ocsjs/blob/4.0/packages/core/src/core/worker/utils.ts#L59)分隔 ，而不是将答案写成数组。
     - 例子： `return (res)=> res.code === 1 ? [res.question,res.answer.join('#')] : undefined` ， 使用 `join` 方法将数组转换成字符串 。
   - `【重要】`需要将题库配置中 homepage 以及 url 所涉及到的域名，在到脚本头部元信息 `@connect` 中新增域名，否则无法请求到数据。 
-    - 例子： url 是 https://example.com/search 则需要添加对应的元信息 `@connect example.com`，更多详情请查看油猴跨域API: `https://www.tampermonkey.net/documentation.php#meta:connect`， 或者在脚本管理器设置中找到 `@connect 模式：`， 将其设置为宽松模式。  
+    - 例子： url 是 https://example.com/search 则需要添加对应的元信息 `@connect example.com`，或者在脚本管理器设置中找到 `@connect 模式：`， 将其设置为宽松模式。 更多详情请查看油猴跨域API: `https://www.tampermonkey.net/documentation.php#meta:connect`，  
 ---
 
 - 返回一个数组 : `[题目, 答案]`
@@ -78,7 +78,7 @@ handler 例子：
 
 ---
 
-- 或者二维数组 : `[[题目1, 答案1], [题目2, 答案2]]`，对应的字符串 `return [["xxx","xxx"],["xxx","xxx"]]`
+- 或者二维数组 : `[[题目1, 答案1], [题目2, 答案2]]` , 注意这里的答案12，并不是多选题的答案，而是每个题目所对应的答案，因为每个题目搜索时，不同题库返回可以有多个相似的题目。多选题返回格式看上面的注意事项。 
 
 > 假设接口数据(res)为：
 
