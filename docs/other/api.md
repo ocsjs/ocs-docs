@@ -49,8 +49,11 @@ tags:
 
 - handler 中需要对请求到的数据进行解析，并返回一个数组，二维数组，或者 undefined
 
-- 这里注意，如果题库需要返回一个多选题的答案，需要将答案用[`特殊符号`](https://github.com/ocsjs/ocsjs/blob/4.0/packages/core/src/core/worker/utils.ts#L59)分隔 ，而不是将答案写成数组。
-
+- 注意事项：
+  - 如果题库需要返回一个多选题的答案，需要将答案用[`特殊符号`](https://github.com/ocsjs/ocsjs/blob/4.0/packages/core/src/core/worker/utils.ts#L59)分隔 ，而不是将答案写成数组。
+    - 例子： `return (res)=> res.code === 1 ? [res.question,res.answer.join('#')] : undefined` ， 使用 `join` 方法将数组转换成字符串 。
+  - `【重要】`需要将题库配置中 homepage 以及 url 所涉及到的域名，在到脚本头部元信息 `@connect` 中新增域名，否则无法请求到数据。 
+    - 例子： url 是 https://example.com/search 则需要添加对应的元信息 `@connect example.com`，更多详情请查看油猴跨域API: `https://www.tampermonkey.net/documentation.php#meta:connect`， 或者在脚本管理器设置中找到 `@connect 模式：`， 将其设置为宽松模式。  
 ---
 
 - 返回一个数组 : `[题目, 答案]`
