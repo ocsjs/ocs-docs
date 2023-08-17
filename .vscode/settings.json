@@ -3,5 +3,9 @@
         "scriptcat",
         "Tampermonkey",
         "userscript"
-    ]
+    ],
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
 }

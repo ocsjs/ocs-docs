@@ -83,7 +83,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'https://cdn.ocsjs.com/logo.ico',
-
+  staticDirectories: ['public', 'static'],
   scripts: [
     `https://cdn.ocsjs.com/dist/${OCS_VERSION}/index.js`
   ],

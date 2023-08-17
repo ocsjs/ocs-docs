@@ -4,7 +4,7 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import { ScriptShowCase } from '@site/src/components/ScriptShowCase';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -40,7 +40,7 @@ export default function Home(): JSX.Element {
       description={siteConfig.tagline}>
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <ScriptShowCase />
       </main>
     </Layout>
   );

@@ -68,6 +68,18 @@ github-历史版本：https://github.com/ocsjs/ocsjs/releases
 
 脚本默认带有视频，ppt，等学习功能，如果想开启自动答题功能，请查看 [自动答题教程](/docs/work)
 
+### 删除脚本
+
+> 注意每个脚本管理器的页面是不一样的，但是删除逻辑大致相同。
+
+1. 打开右上角的脚本管理器，点击脚本管理。
+
+![脚本管理](../static/img/common/script_manage.png)
+
+2. 然后进入脚本列表，找到右边删除按钮，点击即可删除
+
+![脚本删除](../static/img/common/script_delete.png)
+
 ### 注意事项
 
 - 如果您的页面没有出现悬浮窗，请刷新重试，或者更换浏览器，还不行的话加群带着截图进行反馈。
