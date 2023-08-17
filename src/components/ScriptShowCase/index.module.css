@@ -1,6 +1,26 @@
+/**
+媒体查询
+*/
+
+@media screen and (max-width: 1200px) {
+    .showCase {
+        width: 100% !important;
+        ;
+    }
+
+    .showCaseImgContainer {
+        width: 100% !important;
+        flex-wrap: wrap;
+    }
 
 
-.showCase{
+    .showCase+.showCase {
+        margin-left: 0px !important;
+    }
+}
+
+
+.showCase {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -8,7 +28,7 @@
     width: 25%;
 }
 
-.showCaseDesc{
+.showCaseDesc {
     margin-top: 24px;
     height: 200px;
     text-align: center;
@@ -17,12 +37,13 @@
 }
 
 
-.showCase + .showCase{
+.showCase+.showCase {
     margin-left: 64px;
 }
- 
 
-.showCaseImgContainer{
+
+.showCaseImgContainer {
+    width: 70%;
     padding: 24px;
     display: flex;
     align-items: end;

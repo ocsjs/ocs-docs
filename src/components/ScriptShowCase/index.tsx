@@ -9,7 +9,7 @@ const imageStudyShowCaseZHS = require('@site/static/img/script/study_show_case_z
 export function ScriptShowCase(): JSX.Element {
   return (
     <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <div style={{ width: '70%' }} className={styles.showCaseImgContainer}>
+      <div className={styles.showCaseImgContainer}>
 
         <div className={styles.showCase} style={{ width: '25%' }}>
           <img className={styles.showCaseImg} src={imageHomepage}></img>
