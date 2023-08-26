@@ -68,6 +68,18 @@ github-历史版本：https://github.com/ocsjs/ocsjs/releases
 
 脚本默认带有视频，ppt，等学习功能，如果想开启自动答题功能，请查看 [自动答题教程](/docs/work)
 
+### 关闭脚本
+
+> 注意每个脚本管理器的页面是不一样的，但是关闭逻辑大致相同。
+
+1. 打开右上角的脚本管理器，点击脚本管理。
+
+![脚本管理](../static/img/common/script_manage.png)
+
+2. 然后进入脚本列表，找到左边开关按钮，点击即可关闭
+
+![脚本关闭](../static/img/common/script_close.png)
+
 ### 删除脚本
 
 > 注意每个脚本管理器的页面是不一样的，但是删除逻辑大致相同。
