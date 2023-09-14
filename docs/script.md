@@ -27,6 +27,7 @@ tags:
 
 ### 第一步 安装脚本管理器
 
+> 以下管理器只需安装其中一个即可
 > 🎉 脚本猫是[一之哥](https://blog.icodef.com/)开发的国产脚本管理器哦，多多支持~
 
 - `脚本猫`： <a href="https://docs.scriptcat.org/" target="_blank"> https://docs.scriptcat.org </a>
