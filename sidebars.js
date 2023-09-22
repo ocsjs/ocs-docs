@@ -32,7 +32,7 @@ const sidebars = {
     {
       type: 'category',
       label: '全部教程',
-      items: ['script', 'app', 'work', 'update'],
+      items: ['script', 'app', 'work', 'update', 'script-helper'],
       collapsed: false
     },
     {

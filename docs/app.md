@@ -25,6 +25,19 @@ title: 软件教程
 
 <img width="50%" src={require("/static/img/app/script_list.png").default} />
 
+## 视频使用教程
+
+> 视频最后出现了 OCS 脚本，后续可以按照脚本上面的提示进行网课学习
+
+<iframe
+  src="https://cdn.ocsjs.com/app/resources/video/app-use-guide.mp4"
+  frameborder="0"
+  allow="encrypted-media"
+  allowfullscreen="true"
+  style={{width:'100%', height: '50vh'}}
+>
+</iframe>
+
 ## 软件下载
 
 ### 下载须知
