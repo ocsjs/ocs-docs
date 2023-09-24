@@ -51,9 +51,9 @@ title: 软件教程
 
 > 下载后会有使用的教程，非常简单。
 
-#### OCS 软件 `v2.4.0`
+#### OCS 软件 `v2.4.1`
 
-下载链接：https://cdn.ocsjs.com/app/download/ocs-2.4.0-setup-win-x64.exe
+下载链接：https://cdn.ocsjs.com/app/download/ocs-2.4.1-setup-win-x64.exe
 
 - `浏览器多开/分身`：每个浏览器账号数据互相隔离，可实现多个浏览器不同账号登录。
 - `傻瓜式一键安装所有运行环境`：包括： 浏览器拓展，用户脚本等
