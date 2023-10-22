@@ -13,7 +13,7 @@ tags:
 
 - 框架：原生 js + WebComponent
 - 脚本：原生 js + WebComponent
- 
+
 ### 项目结构
 
 ```
@@ -35,10 +35,10 @@ tags:
 
 | 参数        | 类型                           | 必填 | 说明                                                                                                      |
 | ----------- | ------------------------------ | ---- | --------------------------------------------------------------------------------------------------------- |
-| url         | string                         | 是   | 请求路径                                                                                                  |
+| url         | string                         | 是   | 请求路径，可已解析[特殊占位符](#特殊占位符)                                                               |
 | name        | string                         | 是   | 题库名字                                                                                                  |
 | homepage    | string                         | 否   | 题库网址                                                                                                  |
-| data        | Record<string, string>         | 否   | 传递的参数, get 请求将会添加到 url 后面， post 请求会生成请求体                                           |
+| data        | Record<string, string>         | 否   | 传递的参数, get 请求将会添加到 url 后面， post 请求会生成请求体 ， 可已解析[特殊占位符](#特殊占位符)      |
 | method      | "post" \| "get"                | 否   | 默认 `get` , 请求方法                                                                                     |
 | contentType | "json" \| "text"               | 否   | 默认 `json` , 定义 handler 中的参数类型                                                                   |
 | type        | "fetch" \| "GM_xmlhttpRequest" | 否   | 默认 `fetch` , 请求类型, `fetch` 是用浏览器原生 API， `GM_xmlhttpRequest` 使用油猴自带 API , 可进行跨域。 |
@@ -52,8 +52,9 @@ tags:
 - 注意事项：
   - 如果题库需要返回一个多选题的答案，需要将答案用[`特殊符号`](https://github.com/ocsjs/ocsjs/blob/4.0/packages/core/src/core/worker/utils.ts#L59)分隔 ，而不是将答案写成数组。
     - 例子： `return (res)=> res.code === 1 ? [res.question,res.answer.join('#')] : undefined` ， 使用 `join` 方法将数组转换成字符串 。
-  - `【重要】`需要将题库配置中 homepage 以及 url 所涉及到的域名，在到脚本头部元信息 `@connect` 中新增域名，否则无法请求到数据。 
-    - 例子： url 是 https://example.com/search 则需要添加对应的元信息 `@connect example.com`，或者在脚本管理器设置中找到 `@connect 模式：`， 将其设置为宽松模式。 更多详情请查看油猴跨域API: `https://www.tampermonkey.net/documentation.php#meta:connect`，  
+  - `【重要】`需要将题库配置中 homepage 以及 url 所涉及到的域名，在到脚本头部元信息 `@connect` 中新增域名，否则无法请求到数据。
+    - 例子： url 是 https://example.com/search 则需要添加对应的元信息 `@connect example.com`，或者在脚本管理器设置中找到 `@connect 模式：`， 将其设置为宽松模式。 更多详情请查看油猴跨域 API: `https://www.tampermonkey.net/documentation.php#meta:connect`，
+
 ---
 
 - 返回一个数组 : `[题目, 答案]`
@@ -78,7 +79,7 @@ handler 例子：
 
 ---
 
-- 或者二维数组 : `[[题目1, 答案1], [题目2, 答案2]]` , 注意这里的答案12，并不是多选题的答案，而是每个题目所对应的答案，因为每个题目搜索时，不同题库返回可以有多个相似的题目。多选题返回格式看上面的注意事项。 
+- 或者二维数组 : `[[题目1, 答案1], [题目2, 答案2]]` , 注意这里的答案 12，并不是多选题的答案，而是每个题目所对应的答案，因为每个题目搜索时，不同题库返回可以有多个相似的题目。多选题返回格式看上面的注意事项。
 
 > 假设接口数据(res)为：
 
@@ -106,7 +107,6 @@ handler 例子：
 
 - 如果题库接口搜索不到，需要显示某些信息（需要提醒用户的信息）
 
-
 > 假设接口数据(res)为：
 
 ```json
@@ -120,13 +120,13 @@ handler 例子：
 
 ```json
 {
-  "handler": "return (res)=>res.code === 1 ? [res.question,res.answer] : [res.msg, undefined]  ",
+  "handler": "return (res)=>res.code === 1 ? [res.question,res.answer] : [res.msg, undefined]  "
 }
 ```
 
 ---
 
-- 如果题库接口不存在题目的内容，题目可以直接写 undefined ，（OCS会自动将搜索的题目显示）
+- 如果题库接口不存在题目的内容，题目可以直接写 undefined ，（OCS 会自动将搜索的题目显示）
 
 > 假设接口数据(res)为：
 
@@ -174,21 +174,21 @@ defaultAnswerWrapperHandler(
             },
             handler: "return (res)=> res.code === 0 ? undefined : [res.data.title, res.data.answers[0]]"  // 取第一个结果
             // 或者多个结果
-            // handler: "return (res)=> res.code === 0 ? undefined : res.data.answers.map(a=>([res.data.title, a]))"  
+            // handler: "return (res)=> res.code === 0 ? undefined : res.data.answers.map(a=>([res.data.title, a]))"
         },
     ]
 );
 
 ```
 
-注意：
+### 特殊占位符
 
-- `${xxx}` 是变量占位符，是根据脚本中调用的 defaultAnswerWrapperHandler 的第一个参数进行替换，如果脚本调用时没传 type 或者 options ，则不会替换
+- `${xxx}` 是变量占位符，是根据脚本中调用的 defaultAnswerWrapperHandler 的第一个参数进行替换，如果脚本调用时没传，则不会替换
   - 可以使用在 `data` 和 `url` 字段中
   - 可以解析
-    - $title: 题目标题
-    - $type: 题目类型
-    - $options: 题目选项
+    - ${title}: 题目标题
+    - ${type}: 题目类型，可能为空
+    - ${options}: 题目选项，可能为空
 
 所以最终填写的 `题库配置` 为： （不要使用这个，这个只是例子！！！！）
 
