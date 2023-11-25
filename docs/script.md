@@ -5,41 +5,83 @@ tags:
   - OCS脚本
 ---
 
-:::tip 使用须知
+### 使用须知
 
-- 如果之前有使用过其他脚本的小伙伴，在使用 OCS 助手之前，请先关闭其他脚本，避免脚本之间发生冲突。
-- 请务必使用 edge , chrome 使用其他浏览器的例如 360，qq 浏览器所造成的不兼容，以及其他情况用户自行承担。
+:::tip
 
-推荐浏览器：
+- 在使用之前，请关闭其他脚本，避免脚本之间发生冲突。
 
-<a href="https://www.microsoft.com/zh-cn/edge/download" target="_blank"> <img src="https://user-images.githubusercontent.com/50533276/166101774-c62bfc5a-89fc-42e2-9638-484847bb0dd7.png" width="64" height="64" /> </a>
+- 不兼容浏览器（不要使用）： QQ 浏览器、360 浏览器 等
 
-<a href="https://www.google.com/intl/zh-CN/chrome/" target="_blank"> <img src="https://user-images.githubusercontent.com/50533276/166101769-cc4cf43a-df3f-479a-bd19-e5d4033961dd.png" width="64" height="64" /> </a>
+- 兼容浏览器：
+
+<div style={{display:'flex', alignItems:'center', border: '1px solid #bfbfbf', borderRadius:'12px',margin:'4px 0px'}}>
+
+<img src="https://user-images.githubusercontent.com/50533276/166101774-c62bfc5a-89fc-42e2-9638-484847bb0dd7.png" width="64" height="64" style={{borderRadius:'12px', marginRight:'24px'}} />
+
+<span>Edge 微软浏览器 <a href="https://www.microsoft.com/zh-cn/edge/download" target="_blank"> https://www.microsoft.com/zh-cn/edge/download </a> </span>
+
+</div>
+
+<div style={{display:'flex', alignItems:'center', border: '1px solid #bfbfbf', borderRadius:'12px',margin:'4px 0px'}}>
+
+<img src="https://user-images.githubusercontent.com/50533276/166101769-cc4cf43a-df3f-479a-bd19-e5d4033961dd.png" width="64" height="64" style={{borderRadius:'12px', marginRight:'24px'}}/>
+
+<span>Chrome 谷歌浏览器 <a href="https://www.google.cn/chrome/index.html" target="_blank"> https://www.google.cn/chrome/index.html </a></span>
+
+</div>
 
 :::
 
-### 使用须知
-
-如果是电脑小白，不会安装脚本管理器和脚本，可以下载 OCS 软件： [`OCS软件教程`](/docs/app)  
-里面有傻瓜式一键安装所有环境，并可以直接新建浏览器进行刷课
-
 ---
 
-### 第一步 安装脚本管理器
+## 第一步 安装 脚本管理器
 
 > 以下管理器只需安装其中一个即可
-> 🎉 脚本猫是[一之哥](https://blog.icodef.com/)开发的国产脚本管理器哦，多多支持~
+
+> 🎉 脚本猫是 [一之哥](https://blog.icodef.com/) 开发的国产脚本管理器哦，多多支持~
+
+> Tampermonkey（篡改猴/有些人也叫他油猴，但油猴其实是 GreaseMonkey ， 最早出现的脚本管理器）
 
 - `脚本猫`： <a href="https://docs.scriptcat.org/" target="_blank"> https://docs.scriptcat.org </a>
-
 - `Tampermonkey`： <a href="https://www.tampermonkey.net/" target="_blank"> https://www.tampermonkey.net/</a>
+
+### 脚本猫 安装图文教程：
+
+<div width="600px">
+
+![1](../static/img/script/scriptcat_download_1.png)
+
+![2](../static/img/script/scriptcat_download_2.png)
+
+![3](../static/img/script/scriptcat_download_3.png)
+
+</div>
+ 
+<div style={{margin:"12px 0px"}}>点击获取即可安装。安装后，即可查看第二步。</div>
+
+<div>
+
+### Tampermonkey 安装图文教程：
+
+</div>
+
+<div width="600px">
+
+![1](../static/img/script/tampermonkey_download_1.png)
+
+![2](../static/img/script/tampermonkey_download_2.png)
+
+</div>
+
+点击获取即可安装。安装后，即可查看第二步。
 
 ---
 
-### 第二步 安装脚本
+## 第二步 安装脚本
 
 > 直接点进链接，然后点击安装按钮即可  
-> 脚本猫或者 greasyfork 上的脚本访问不了或者被封禁的时候，可以使用官方或 github 的脚本安装链接。
+> 脚本猫 或者 greasyfork 上的脚本访问不了或者被封禁的时候，可以使用官方或 github 的脚本安装链接。
 
 | 安装来源           | 链接                                                                                                                                       | 说明                                  |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------- |
@@ -56,20 +98,26 @@ greasyfork-历史版本：https://greasyfork.org/zh-CN/scripts/457151/versions
 
 github-历史版本：https://github.com/ocsjs/ocsjs/releases
 
-### 第三步 进入网课页面
+## 第三步 进入网课页面
 
-打开超星，智慧树，等网课平台，等待页面上出现提示面板 （一个白色的小框框，一般在屏幕正中间），根据面板提示操作，进入学习，作业考试页面即可自动运行。
+打开网课平台，等待页面上出现脚本窗口，根据面板提示操作，进入视频学习，作业考试页面即可自动运行。
 
 例如：
 
-![cx](/img/cx.png)
-![cx](/img/zhs.png)
+![show_case_cx](../static/img/script/show_case_cx.png)
+![show_case_zhs](../static/img/script/show_case_zhs.png)
 
-### 第四步 开启自动答题
+## 第四步 开启自动答题
 
 脚本默认带有视频，ppt，等学习功能，如果想开启自动答题功能，请查看 [自动答题教程](/docs/work)
 
-### 关闭脚本教程
+## 最后一步 学习如何更新/管理脚本
+
+**更新脚本教程**
+
+链接： <a href="https://docs.ocsjs.com/docs/update" target="_blank">https://docs.ocsjs.com/docs/update</a>
+
+**关闭脚本教程**
 
 > 注意每个脚本管理器的页面是不一样的，但是关闭逻辑大致相同。
 
@@ -81,7 +129,7 @@ github-历史版本：https://github.com/ocsjs/ocsjs/releases
 
 ![脚本关闭](../static/img/common/script_close.png)
 
-### 删除脚本教程
+**删除脚本教程**
 
 > 注意每个脚本管理器的页面是不一样的，但是删除逻辑大致相同。
 
@@ -93,7 +141,7 @@ github-历史版本：https://github.com/ocsjs/ocsjs/releases
 
 ![脚本删除](../static/img/common/script_delete.png)
 
-### 注意事项
+**注意事项**
 
 - 如果您的页面没有出现悬浮窗，请刷新重试，或者更换浏览器，还不行的话加群带着截图进行反馈。
 

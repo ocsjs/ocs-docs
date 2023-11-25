@@ -2,15 +2,11 @@
 title: 使用教程
 ---
 
-## 目录
+## OCS 产品
 
-[脚本教程](/docs/script) —— OCS 浏览器用户脚本， 适合个人使用，超星学习通，知道智慧树，职教云等多个网课的 🖥️ `视频` `作业` `考试` 等功能
+[OCS 网课助手-脚本 https://docs.ocsjs.com/docs/script](https://docs.ocsjs.com/docs/script) ： 适合个人使用，用于自动学习 超星学习通，知道智慧树，职教云，智慧职教，等多个网课
 
-[软件教程](/docs/app) —— OCS 桌面端软件，一键刷课， 浏览器多开/分身， 网课账号管理 ，自动登录， 等功能
-
-[自动答题教程](/docs/work) —— 使脚本拥有自动答题功能
-
-[更新教程](/docs/update) —— 介绍脚本和软件应该如何更新版本
+[OCS 桌面软件 https://docs.ocsjs.com/docs/app](https://docs.ocsjs.com/docs/app) ： 一键刷课，多账号刷课， 浏览器多开/分身， 网课账号管理 ，自动登录， 等功能，支持 Windows, Linux, Mac 多个操作系统。
 
 ## 联系我们
 
