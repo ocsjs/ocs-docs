@@ -33,17 +33,17 @@ tags:
 
 **参数** :
 
-| 参数        | 类型                           | 必填 | 说明                                                                                                      |
-| ----------- | ------------------------------ | ---- | --------------------------------------------------------------------------------------------------------- |
-| url         | string                         | 是   | 请求路径，可已解析[特殊占位符](#特殊占位符)                                                               |
-| name        | string                         | 是   | 题库名字                                                                                                  |
-| homepage    | string                         | 否   | 题库网址                                                                                                  |
-| data        | Record<string, string>         | 否   | 传递的参数, get 请求将会添加到 url 后面， post 请求会生成请求体 ， 可已解析[特殊占位符](#特殊占位符)      |
-| method      | "post" \| "get"                | 否   | 默认 `get` , 请求方法                                                                                     |
-| contentType | "json" \| "text"               | 否   | 默认 `json` , 定义 handler 中的参数类型                                                                   |
-| type        | "fetch" \| "GM_xmlhttpRequest" | 否   | 默认 `fetch` , 请求类型, `fetch` 是用浏览器原生 API， `GM_xmlhttpRequest` 使用油猴自带 API , 可进行跨域。 |
-| headers     | Record<string, string>         | 否   | 默认 `{}`                                                                                                 |
-| handler     | string                         | 是   | 详情请看下方解释                                                                                          |
+| 参数        | 类型                           | 必填 | 说明                                                                                                                                                  |
+| ----------- | ------------------------------ | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| url         | string                         | 是   | 请求路径，可已解析[特殊占位符](#特殊占位符)                                                                                                           |
+| name        | string                         | 是   | 题库名字                                                                                                                                              |
+| homepage    | string                         | 否   | 题库网址                                                                                                                                              |
+| data        | Record<string, string>         | 否   | 传递的参数, get 请求将会添加到 url 后面， post 请求会生成请求体 ， 可已解析[特殊占位符](#特殊占位符) ， 或者[自定义字段解析方法](#自定义字段解析方法) |
+| method      | "post" \| "get"                | 否   | 默认 `get` , 请求方法                                                                                                                                 |
+| contentType | "json" \| "text"               | 否   | 默认 `json` , 定义 handler 中的参数类型                                                                                                               |
+| type        | "fetch" \| "GM_xmlhttpRequest" | 否   | 默认 `fetch` , 请求类型, `fetch` 是用浏览器原生 API， `GM_xmlhttpRequest` 使用油猴自带 API , 可进行跨域。                                             |
+| headers     | Record<string, string>         | 否   | 默认 `{}`                                                                                                                                             |
+| handler     | string                         | 是   | 详情请看下面说明                                                                                                                                      |
 
 `handler` 选项是个字符串 ， 使用 Function(string) 构造方法进行解析生成方法，方法传入的第一个参数是 `请求获取到的文本/数据（使用 contentType 定义的数据）`
 
@@ -54,6 +54,9 @@ tags:
     - 例子： `return (res)=> res.code === 1 ? [res.question,res.answer.join('#')] : undefined` ， 使用 `join` 方法将数组转换成字符串 。
   - `【重要】`需要将题库配置中 homepage 以及 url 所涉及到的域名，在到脚本头部元信息 `@connect` 中新增域名，否则无法请求到数据。
     - 例子： url 是 https://example.com/search 则需要添加对应的元信息 `@connect example.com`，或者在脚本管理器设置中找到 `@connect 模式：`， 将其设置为宽松模式。 更多详情请查看油猴跨域 API: `https://www.tampermonkey.net/documentation.php#meta:connect`，
+  - 如果不想手动配置 @connect 可以安装官方打包的【全域名通用版本】，但是请求时会出现弹窗，可以让用户可以选择允许全部域名进行请求。
+    - 油叉安装： [https://greasyfork.org/zh-CN/scripts/481438](https://greasyfork.org/zh-CN/scripts/481438)
+    - 脚本猫脚本站安装： [https://scriptcat.org/zh-CN/script-show-page/1398](https://scriptcat.org/zh-CN/script-show-page/1398)
 
 ---
 
@@ -179,6 +182,66 @@ defaultAnswerWrapperHandler(
     ]
 );
 
+```
+
+### 自定义字段解析方法
+
+> 4.7.21 版本新增
+
+data 中的数据可以进行自定义解析，原理与 handler 一致，第一个参数是脚本的上下文参数 env: {title, options, type}
+
+例子：
+
+```ts
+// 这段代码是模仿脚本中的调用方式
+defaultAnswerWrapperHandler(
+  {
+    // 题目
+    title: "1+2,2+3",
+    // 题目选项 目前支持的题目类型有 single,multiple,judgement,completion
+    type: "single",
+    // 题目选项
+    options: "A. xxx\nB. xxx\nC. xxx\nD. xxx",
+  },
+  [
+    {
+      // ...
+      data: {
+        // 格式必须按照这样写，需要有 handler 字段
+        //例子1： 把 title 进行特殊处理
+        question: {
+          handler: "return (env)=> env.title.replace('单选题','')",
+        },
+        // 如果不想转换，可以正常写
+        question: "${title}",
+        // 例子2 ： 把 options 字段解析成数组，（因为脚本默认传递的 options 参数是一个字符串，每个选项使用 \n 分隔）
+        options: {
+          handler: "return (env)=> env.options.split('\n')",
+        },
+        // 例子3： 把 type 转换成服务器需要的格式
+        type: {
+          handler: `
+              return (env)=>{
+                return env.type === 'single' ? 1 : 
+                env.type === 'multiple' ? 2 :
+                env.type === 'judgement' ? 3 : 
+                env.type === 'completion' ? 4 : 0
+              }
+          `,
+        },
+      },
+      // ...
+    },
+  ]
+);
+```
+
+解析后的实际发送数据为：
+
+```json
+{
+  "options": ["A. xxx", "B. xxx", "C. xxx", "D. xxx"]
+}
 ```
 
 ### 特殊占位符
