@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://ocsjs.com/blog</id>
+    <title>OCS网课助手 Blog</title>
+    <updated>2022-05-27T06:55:26.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://ocsjs.com/blog"/>
+    <subtitle>OCS网课助手 Blog</subtitle>
+    <icon>https://ocsjs.com/https://cdn.ocsjs.com/logo.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[欢迎来到OCS博客]]></title>
+        <id>欢迎来到OCS博客</id>
+        <link href="https://ocsjs.com/blog/欢迎来到OCS博客"/>
+        <updated>2022-05-27T06:55:26.000Z</updated>
+        <summary type="html"><![CDATA[这里用于记录一些博客内容。]]></summary>
+        <content type="html"><![CDATA[<p>这里用于记录一些博客内容。</p>]]></content>
+        <author>
+            <name>言小溪enncy</name>
+            <uri>https://github.com/enncy</uri>
+        </author>
+        <category label="intro" term="intro"/>
+    </entry>
+</feed>

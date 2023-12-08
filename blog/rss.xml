@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>OCS网课助手 Blog</title>
+        <link>https://ocsjs.com/blog</link>
+        <description>OCS网课助手 Blog</description>
+        <lastBuildDate>Fri, 27 May 2022 06:55:26 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>zh-CN</language>
+        <item>
+            <title><![CDATA[欢迎来到OCS博客]]></title>
+            <link>https://ocsjs.com/blog/欢迎来到OCS博客</link>
+            <guid>欢迎来到OCS博客</guid>
+            <pubDate>Fri, 27 May 2022 06:55:26 GMT</pubDate>
+            <description><![CDATA[这里用于记录一些博客内容。]]></description>
+            <content:encoded><![CDATA[<p>这里用于记录一些博客内容。</p>]]></content:encoded>
+            <category>intro</category>
+        </item>
+    </channel>
+</rss>
