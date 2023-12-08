@@ -190,6 +190,9 @@ defaultAnswerWrapperHandler(
 
 data 中的数据可以进行自定义解析，原理与 handler 一致，第一个参数是脚本的上下文参数 env: {title, options, type}
 
+注意，OCS 只会检测第一层嵌套的字段，如果是对象，并且有 handler 字段，则会进行 `字段解析` ，
+如果是字符串，则会进行 [特殊占位符](#特殊占位符) 解析，如果是其他类型，则是按照数据传输。
+
 例子：
 
 ```ts
@@ -197,13 +200,14 @@ data 中的数据可以进行自定义解析，原理与 handler 一致，第一
 defaultAnswerWrapperHandler(
   {
     // 题目
-    title: "1+2,2+3",
+    title: "【单选题】1+2 = ?",
     // 题目选项 目前支持的题目类型有 single,multiple,judgement,completion
     type: "single",
     // 题目选项
-    options: "A. xxx\nB. xxx\nC. xxx\nD. xxx",
+    options: "A. 1\nB. 2\nC. 3\nD. 4",
   },
   [
+    // 从这里开始这是题库配置
     {
       // ...
       data: {
@@ -240,9 +244,63 @@ defaultAnswerWrapperHandler(
 
 ```json
 {
-  "options": ["A. xxx", "B. xxx", "C. xxx", "D. xxx"]
+  "title": "【】1+2 = ?",
+  "options": ["A. 1", "B. 2", "C. 3", "D. 4"],
+  "type": 1
 }
 ```
+
+多层嵌套数据例子：
+
+> 例子 1. 魔改 OCS 成 chatgpt 聊天工具
+
+> 使用 chatgpt 在脚本在线搜题功能中实现上下文存储对话
+
+> handler 里面可以使用 \n 进行代码换行，毕竟是传递到 new Function 的第一个参数里面的
+
+messages 部分的 handler:
+
+```js
+return (env) => {
+  const messages = JSON.parse(localStorage.getItem("chatgpt-messages") || "[]");
+  const content = env.title;
+  messages.push({ content, role: "user" });
+  return messages;
+};
+```
+
+handler 部分:
+
+> 假设响应是 json 格式 ， 并且 res.content 是 chatgpt 的回答， 进行储存对话
+
+```js
+return (res) => {
+  const messages = JSON.parse(localStorage.getItem("chatgpt-messages") || "[]");
+  messages.push({ content: res.content, role: "assistant" });
+  const question = messages[messages.length - 2].content;
+  const answer = res.content;
+  return [question, answer];
+};
+```
+
+```json
+[
+  {
+    // ... 这里写 chatgpt 接口参数
+    "data": {
+      "messages":{
+        "handler":"\n    return (env)=>{\n        const messages = JSON.parse(localStorage.getItem(\"chatgpt-messages\") || \"[]\")\n        const content = env.title\n        messages.push({content, role: \"user\"})\n        return messages\n    }\n"
+      }
+    },
+    "handler":"'return (res) => {\n  const messages = JSON.parse(localStorage.getItem(\"chatgpt-messages\") || \"[]}\");\n  messages.push({ content: res.content, role: \"assistant\" });\n  const question = messages[messages.length - 2].content;\n  const answer = res.content;\n  return [question, answer];\n}'"
+    ...
+  },
+];
+```
+
+魔改结束，这只是示例，并不代表实际能够运行。
+
+---
 
 ### 特殊占位符
 
