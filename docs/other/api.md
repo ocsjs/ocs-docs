@@ -54,9 +54,7 @@ tags:
     - 例子： `return (res)=> res.code === 1 ? [res.question,res.answer.join('#')] : undefined` ， 使用 `join` 方法将数组转换成字符串 。
   - `【重要】`需要将题库配置中 homepage 以及 url 所涉及到的域名，在到脚本头部元信息 `@connect` 中新增域名，否则无法请求到数据。
     - 例子： url 是 https://example.com/search 则需要添加对应的元信息 `@connect example.com`，或者在脚本管理器设置中找到 `@connect 模式：`， 将其设置为宽松模式。 更多详情请查看油猴跨域 API: `https://www.tampermonkey.net/documentation.php#meta:connect`，
-  - 如果不想手动配置 @connect 可以安装官方打包的【全域名通用版本】，但是请求时会出现弹窗，可以让用户可以选择允许全部域名进行请求。
-    - 油叉安装： [https://greasyfork.org/zh-CN/scripts/481438](https://greasyfork.org/zh-CN/scripts/481438)
-    - 脚本猫脚本站安装： [https://scriptcat.org/zh-CN/script-show-page/1398](https://scriptcat.org/zh-CN/script-show-page/1398)
+  - 如果不想手动配置 @connect 可以安装官方打包的 [【全域名通用版本】](#全域名通用版本) ，但是请求时会出现弹窗，可以让用户可以选择允许全部域名进行请求。
 
 ---
 
@@ -324,3 +322,12 @@ return (res) => {
   }
 ]
 ```
+
+## 全域名通用版本
+
+> 开发人员专用版本，@connect 中自带 \* 全域名通配符，可以跨域请求，但是会弹出提示框，让用户选择是否允许跨域请求。
+
+> 与官方的脚本新版本自动检测同步
+
+- 油叉安装： [https://greasyfork.org/zh-CN/scripts/481438](https://greasyfork.org/zh-CN/scripts/481438)
+- 脚本猫脚本站安装： [https://scriptcat.org/zh-CN/script-show-page/1398](https://scriptcat.org/zh-CN/script-show-page/1398)
