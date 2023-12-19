@@ -263,6 +263,7 @@ return (env) => {
   const messages = JSON.parse(localStorage.getItem("chatgpt-messages") || "[]");
   const content = env.title;
   messages.push({ content, role: "user" });
+  localStorage.setItem("chatgpt-messages", JSON.stringify(messages));
   return messages;
 };
 ```
@@ -275,6 +276,7 @@ handler 部分:
 return (res) => {
   const messages = JSON.parse(localStorage.getItem("chatgpt-messages") || "[]");
   messages.push({ content: res.content, role: "assistant" });
+  localStorage.setItem("chatgpt-messages", JSON.stringify(messages));
   const question = messages[messages.length - 2].content;
   const answer = res.content;
   return [question, answer];
@@ -287,10 +289,10 @@ return (res) => {
     // ... 这里写 chatgpt 接口参数
     "data": {
       "messages":{
-        "handler":"\n    return (env)=>{\n        const messages = JSON.parse(localStorage.getItem(\"chatgpt-messages\") || \"[]\")\n        const content = env.title\n        messages.push({content, role: \"user\"})\n        return messages\n    }\n"
+        "handler":"\n    return (env)=>{\n        const messages = JSON.parse(localStorage.getItem(\"chatgpt-messages\") || \"[]\")\n        const content = env.title\n        messages.push({content, role: \"user\"})\n  localStorage.setItem('chatgpt-messages', JSON.stringify(messages));\n        return messages\n    }\n"
       }
     },
-    "handler":"'return (res) => {\n  const messages = JSON.parse(localStorage.getItem(\"chatgpt-messages\") || \"[]}\");\n  messages.push({ content: res.content, role: \"assistant\" });\n  const question = messages[messages.length - 2].content;\n  const answer = res.content;\n  return [question, answer];\n}'"
+    "handler":"'return (res) => {\n  const messages = JSON.parse(localStorage.getItem(\"chatgpt-messages\") || \"[]}\");\n  messages.push({ content: res.content, role: \"assistant\" });\n localStorage.setItem('chatgpt-messages', JSON.stringify(messages));\n  const question = messages[messages.length - 2].content;\n  const answer = res.content;\n  return [question, answer];\n}'"
     ...
   },
 ];
