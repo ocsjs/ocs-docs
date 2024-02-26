@@ -50,14 +50,9 @@ const more = [
     to: '/docs/other/api'
   },
   {
-    label: 'OCS源码',
-    href: 'https://github.com/enncy/online-course-script'
-  },
-  {
-    label: '文档源码',
-    href: 'https://github.com/enncy/ocs-docs'
+    label: '项目源码',
+    href: 'https://github.com/ocsjs'
   }
-
 ];
 
 /** @type {import('@docusaurus/types').Config } */
@@ -160,7 +155,7 @@ const config = {
             position: 'right'
           },
           {
-            href: 'https://github.com/enncy/online-course-script',
+            href: 'https://github.com/ocsjs',
             label: 'GitHub',
             position: 'right'
           }
