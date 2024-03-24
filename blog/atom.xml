@@ -9,7 +9,7 @@
     <icon>https://ocsjs.com/https://cdn.ocsjs.com/logo.ico</icon>
     <entry>
         <title type="html"><![CDATA[欢迎来到OCS博客]]></title>
-        <id>欢迎来到OCS博客</id>
+        <id>https://ocsjs.com/blog/欢迎来到OCS博客</id>
         <link href="https://ocsjs.com/blog/欢迎来到OCS博客"/>
         <updated>2022-05-27T06:55:26.000Z</updated>
         <summary type="html"><![CDATA[这里用于记录一些博客内容。]]></summary>
