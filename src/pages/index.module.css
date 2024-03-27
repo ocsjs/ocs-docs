@@ -26,6 +26,10 @@
   margin: 4px;
 }
 
+.guide-btn{ 
+  font-size: 28px; 
+}
+
 .homeHeader{
   color: #fff;
   text-align: center;

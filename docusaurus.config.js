@@ -57,20 +57,6 @@ const more = [
 
 /** @type {import('@docusaurus/types').Config } */
 const config = {
-
-  /**
-   * 自定义参数
-   */
-  customFields: {
-    actions: [
-      {
-        label: '戳我查看👉  使用教程',
-        href: '/docs/quickly-start'
-      }
-
-    ]
-  },
-
   title: 'OCS网课助手',
   tagline: '专注于帮助大学生从网课中释放出来。让自己的时间把握在自己的手中。',
   url: 'https://ocsjs.com',
