@@ -63,9 +63,9 @@ title: 软件教程
 
 | 操作系统     | 下载链接                                                                 |
 | ------------ | ------------------------------------------------------------------------ |
-| Windows      | https://cdn.ocsjs.com/app/download/ocs-2.6.5-setup-win-x64.exe           |
-| MacOS        | https://cdn.ocsjs.com/app/download/ocs-2.6.5-setup-mac-arm64.dmg         |
-| Ubuntu       | https://cdn.ocsjs.com/app/download/ocs-2.6.5-setup-linux-x86_64.AppImage |
+| Windows      | https://cdn.ocsjs.com/app/download/ocs-2.6.7-setup-win-x64.exe           |
+| MacOS        | https://cdn.ocsjs.com/app/download/ocs-2.6.7-setup-mac-arm64.dmg         |
+| Ubuntu       | https://cdn.ocsjs.com/app/download/ocs-2.6.7-setup-linux-x86_64.AppImage |
 | 更多架构下载 | https://github.com/ocsjs/ocs-desktop/releases/latest                     |
 
 - `浏览器多开/分身`：每个浏览器账号数据互相隔离，可实现多个浏览器不同账号登录。
