@@ -60,7 +60,7 @@ const config = {
   title: 'OCS网课助手',
   tagline: '专注于帮助大学生从网课中释放出来。让自己的时间把握在自己的手中。',
   url: 'https://ocsjs.com',
-  baseUrl: '/',
+  baseUrl: '/ocs-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'https://cdn.ocsjs.com/logo.ico',
