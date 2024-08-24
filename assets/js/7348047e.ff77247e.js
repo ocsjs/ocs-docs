@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkocs_docs=self.webpackChunkocs_docs||[]).push([[901],{6838:s=>{s.exports=JSON.parse('{"label":"\u66f4\u65b0","permalink":"/ocs-docs/docs/tags/\u66f4\u65b0","allTagsPath":"/ocs-docs/docs/tags","count":1,"items":[{"id":"update","title":"\u66f4\u65b0\u6559\u7a0b","description":"\u811a\u672c\u66f4\u65b0","permalink":"/ocs-docs/docs/update"}]}')}}]);

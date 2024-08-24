@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkocs_docs=self.webpackChunkocs_docs||[]).push([[878],{2236:o=>{o.exports=JSON.parse('{"permalink":"/ocs-docs/blog/tags/intro","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

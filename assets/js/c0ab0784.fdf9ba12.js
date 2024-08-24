@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkocs_docs=self.webpackChunkocs_docs||[]).push([[980],{6602:o=>{o.exports=JSON.parse('{"permalink":"/ocs-docs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
