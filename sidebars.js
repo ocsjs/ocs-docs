@@ -40,6 +40,12 @@ const sidebars = {
       label: '更多',
       items: ['other/api', 'other/FQA'],
       collapsed: false
+    },
+    {
+      type: 'category',
+      label: '问题公示',
+      items: ['issues/2024-11'],
+      collapsed: false
     }
   ]
 
