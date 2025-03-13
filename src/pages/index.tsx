@@ -17,20 +17,20 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className={clsx('button button--secondary button--lg', styles.actions, styles['guide-btn'])}
-            href='/docs/issues/2024-11'
-          >
-            <span > → 2024-11月通知：关于脚本无法显示 ←</span>
-          </Link>
-        </div>
-
-        <div className={styles.buttons}>
-          <Link
-            className={clsx('button button--secondary button--lg', styles.actions, styles['guide-btn'])}
             href='/docs/quickly-start'
           >
             <span > → 点击查看使用教程 ← </span>
           </Link>
 
+        </div>
+
+        <div className={styles.buttons}>
+          <Link
+            className={clsx('button button--secondary button--lg', styles.actions, styles['guide-btn'])}
+            href='/docs/issues/2024-11'
+          >
+            <span > → 2024-11月通知：关于脚本无法显示 ←</span>
+          </Link>
         </div>
 
       </div>
