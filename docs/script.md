@@ -80,14 +80,16 @@ tags:
 
 ## 第二步 安装脚本
 
+> 请先查看第一步安装脚本管理器，否则将无法安装脚本到管理器中进行使用，而是下载脚本文
+
 > 点击下面链接，再点安装按钮，页面会自动关闭，这是正常现象
 
 | 安装来源           | 链接                                                                                                                                       | 说明                                  |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------- |
+| 官方安装链接       | （✨ 推荐）[https://cdn.ocsjs.com/ocs.user.js](https://cdn.ocsjs.com/ocs.user.js)                                                          | OCS 官方脚本链接                      |
 | 脚本猫脚本站       | [https://scriptcat.org/script-show-page/367](https://scriptcat.org/script-show-page/367)                                                   | 脚本猫旗下的脚本托管网站              |
 | greasyfork（油叉） | [https://greasyfork.org/zh-CN/scripts/457151](https://greasyfork.org/zh-CN/scripts/457151)                                                 | 油叉是当下比较热门的的脚本托管网站    |
 | github             | [https://github.com/ocsjs/ocsjs/releases/latest/download/ocs.user.js](https://github.com/ocsjs/ocsjs/releases/latest/download/ocs.user.js) | 由 Github Action 自动打包生成（最新） |
-| 官方安装链接       | [https://cdn.ocsjs.com/ocs.user.js](https://cdn.ocsjs.com/ocs.user.js)                                                                     | OCS 官方脚本链接                      |
 
 其他版本安装请看：
 

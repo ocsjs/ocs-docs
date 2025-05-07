@@ -44,7 +44,7 @@ const sidebars = {
     {
       type: 'category',
       label: '问题公示',
-      items: ['issues/2024-11'],
+      items: ['issues/2025'],
       collapsed: false
     }
   ]

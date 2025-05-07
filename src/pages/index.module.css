@@ -22,15 +22,22 @@
   justify-content: center;
 }
 
-.actions{
+.actions {
   margin: 4px;
 }
 
-.guide-btn{ 
-  font-size: 28px; 
+.guide-btn {
+  font-size: 28px;
 }
 
-.homeHeader{
+.guide-notice {
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.452);
+}
+
+.homeHeader {
   color: #fff;
   text-align: center;
   background-color: #159957;
