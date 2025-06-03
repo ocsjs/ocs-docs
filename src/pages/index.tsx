@@ -12,36 +12,6 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner, styles.homeHeader)}>
       <div className="container">
 
-        <div className={styles.buttons}>
-          <Link
-            className={clsx('button button--secondary ', styles.actions, styles['guide-notice'])}
-            href='/docs/issues/2025#关于脚本无法显示'
-            target='_blank'
-          >
-            <span > 【通知】 关于脚本无法显示</span>
-          </Link>
-        </div>
-
-        <div className={styles.buttons}>
-          <Link
-            className={clsx('button button--secondary ', styles.actions, styles['guide-notice'])}
-            href='/docs/issues/2025#关于软件显示异常关闭'
-            target='_blank'
-          >
-            <span > 【通知】 关于软件显示异常关闭</span>
-          </Link>
-        </div>
-
-        <div className={styles.buttons}>
-          <Link
-            className={clsx('button button--secondary ', styles.actions, styles['guide-notice'])}
-            href='/docs/issues/2025#关于油猴网页无法访问'
-            target='_blank'
-          >
-            <span > 【通知】 关于油猴网页无法访问</span>
-          </Link>
-        </div>
-
         <h1 style={{ marginTop: '24px' }} className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
 
@@ -58,10 +28,21 @@ function HomepageHeader() {
           <Link
             style={{ fontSize: '18px' }}
             className={clsx('button button--secondary  button--sm ', styles.actions, styles['guide-btn'])}
+            href='/docs/issues/2025'
+            target='_blank' rel="noreferrer"
+          >
+            关于2025年多个刷课问题公示
+          </Link>
+        </div>
+
+        <div className={styles.buttons} style={{ marginBottom: '1rem' }}>
+          <Link
+            style={{ fontSize: '18px' }}
+            className={clsx('button button--secondary  button--sm ', styles.actions, styles['guide-btn'])}
             href='/docs/script#第二步-安装脚本'
             target='_blank' rel="noreferrer"
           >
-            📥 快捷安装-刷课脚本
+            📥 快捷安装 刷课脚本
           </Link>
         </div>
         <div className={styles.buttons} >
@@ -71,7 +52,7 @@ function HomepageHeader() {
             href='/docs/app#软件下载列表'
             target='_blank' rel="noreferrer"
           >
-            📥 快捷安装-桌面软件
+            🖥️ 快捷安装 桌面软件
           </Link>
         </div>
       </div>

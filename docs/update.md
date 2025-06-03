@@ -8,11 +8,7 @@ tags:
 
 **脚本更新**
 
-脚本是哪里下载的，就去哪里更新，或者点击脚本窗口：后台-更新模块，也可以找到更新链接。
-
-- [脚本猫: https://scriptcat.org/script-show-page/367](https://scriptcat.org/script-show-page/367)
-
-- [greasyfork: https://greasyfork.org/zh-CN/scripts/457151](https://greasyfork.org/zh-CN/scripts/457151)
+脚本更新和安装链接：[🔗 点击前往](./script.md#第二步-安装脚本)
 
 **软件更新**
 
