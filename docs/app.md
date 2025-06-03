@@ -63,14 +63,14 @@ Mac 用户如果提示 **文件损坏**，可以参考 [知乎-MacOS 文件损�
 
 > 下载后会有使用的教程，非常简单。
 
-#### OCS 软件 `v2.7.20`
+#### OCS 软件 `v2.8.2`
 
-| 操作系统     | 下载链接                                                                  |
-| ------------ | ------------------------------------------------------------------------- |
-| Windows      | https://cdn.ocsjs.com/app/download/ocs-2.7.20-setup-win-x64.exe           |
-| MacOS        | https://cdn.ocsjs.com/app/download/ocs-2.7.20-setup-mac-arm64.dmg         |
-| Ubuntu       | https://cdn.ocsjs.com/app/download/ocs-2.7.20-setup-linux-x86_64.AppImage |
-| 更多架构下载 | https://github.com/ocsjs/ocs-desktop/releases/latest                      |
+| 操作系统     | 下载链接                                                                 |
+| ------------ | ------------------------------------------------------------------------ |
+| Windows      | https://cdn.ocsjs.com/app/download/ocs-2.87.2-setup-win-x64.exe          |
+| MacOS        | https://cdn.ocsjs.com/app/download/ocs-2.8.2-setup-mac-arm64.dmg         |
+| Ubuntu       | https://cdn.ocsjs.com/app/download/ocs-2.8.2-setup-linux-x86_64.AppImage |
+| 更多架构下载 | https://github.com/ocsjs/ocs-desktop/releases/latest                     |
 
 - `浏览器多开/分身`：每个浏览器账号数据互相隔离，可实现多个浏览器不同账号登录。
 - `傻瓜式一键安装所有运行环境`：包括： 浏览器拓展，用户脚本等
