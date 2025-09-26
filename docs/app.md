@@ -68,14 +68,14 @@ title: 软件教程
 
 > 下载后会有使用的教程，非常简单。
 
-#### OCS 软件 `v2.8.5`
+#### OCS 软件 `v2.8.12`
 
-| 操作系统     | 下载链接                                                                 |
-| ------------ | ------------------------------------------------------------------------ |
-| Windows      | https://cdn.ocsjs.com/app/download/ocs-2.8.5-setup-win-x64.exe           |
-| MacOS        | https://cdn.ocsjs.com/app/download/ocs-2.8.5-setup-mac-arm64.dmg         |
-| Ubuntu       | https://cdn.ocsjs.com/app/download/ocs-2.8.5-setup-linux-x86_64.AppImage |
-| 更多架构下载 | https://github.com/ocsjs/ocs-desktop/releases/latest                     |
+| 操作系统     | 下载链接                                                                  |
+| ------------ | ------------------------------------------------------------------------- |
+| Windows      | https://cdn.ocsjs.com/app/download/ocs-2.8.12-setup-win-x64.exe           |
+| MacOS        | https://cdn.ocsjs.com/app/download/ocs-2.8.12-setup-mac-arm64.dmg         |
+| Ubuntu       | https://cdn.ocsjs.com/app/download/ocs-2.8.12-setup-linux-x86_64.AppImage |
+| 更多架构下载 | https://github.com/ocsjs/ocs-desktop/releases/latest                      |
 
 - `浏览器多开/分身`：每个浏览器账号数据互相隔离，可实现多个浏览器不同账号登录。
 - `傻瓜式一键安装所有运行环境`：包括： 浏览器拓展，用户脚本等
