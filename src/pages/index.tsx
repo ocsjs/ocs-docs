@@ -20,7 +20,7 @@ function HomepageHeader() {
             className={clsx('button button--secondary button--lg ', styles.actions, styles['guide-btn'])}
             href='/docs/quickly-start'
           >
-            <span > 📖 点我查看使用方法 </span>
+            <span > 📖 使用方法 </span>
           </Link>
         </div>
 
@@ -31,7 +31,7 @@ function HomepageHeader() {
             href='/docs/issues/2025'
             target='_blank' rel="noreferrer"
           >
-            关于2025年多个刷课问题公示
+            ⚠️关于2025年多个刷课问题公示
           </Link>
         </div>
 
