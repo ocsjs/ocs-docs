@@ -218,7 +218,7 @@ defaultAnswerWrapperHandler(
         question: "${title}",
         // 例子2 ： 把 options 字段解析成数组，（因为脚本默认传递的 options 参数是一个字符串，每个选项使用 \n 分隔）
         options: {
-          handler: "return (env)=> env.options.split('\n')",
+          handler: "return (env)=> env.options.split('\\n')",
         },
         // 例子3： 把 type 转换成服务器需要的格式
         type: {
