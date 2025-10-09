@@ -20,7 +20,7 @@ function HomepageHeader() {
             className={clsx('button button--secondary button--lg ', styles.actions, styles['guide-btn'])}
             href='/docs/quickly-start'
           >
-            <span > 📖 使用方法 </span>
+            <span > 📖 新手使用方法 </span>
           </Link>
         </div>
 
