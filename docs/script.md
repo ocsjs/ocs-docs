@@ -7,6 +7,29 @@ tags:
 
 :::info 用于自动学习 `超星学习通`、`知道智慧树`、`职教云`、`智慧职教` 等多个网课
 
+<div> 安装后，打开网课平台，等待页面上出现脚本窗口，根据面板提示操作，进入视频学习，作业考试页面即可自动运行。 </div>
+<div> 图片预览：</div>
+
+<div style={{ maxWidth:"1000px" }}>
+
+<div style={{display:"flex"  }}>
+
+<img
+src="/img/script/study_show_case_cx.png" style={{maxWidth: '33%'}}
+/>
+
+<img
+src="/img/script/study_show_case_zhs.png" style={{maxWidth: '33%'}}
+/>
+
+<img
+src="/img/script/exam_show_case.png" style={{maxWidth: '33%'}}
+/>
+
+</div>
+
+ </div>
+
 :::
 
 ### 使用须知
