@@ -2,38 +2,21 @@
 title: 软件教程
 ---
 
----
+:::info OCS 桌面端软件， 适合多人使用 👨‍👧‍👧 浏览器多开/分身、网课账号管理、自动登录、软件辅助 等功能
+使用一键初始化按钮，可以直接安装脚本和脚本管理器，创建浏览器后点击运行即可一键刷课，傻瓜式操作。
+:::
 
-<details >
+<details open>
 
-<summary  > OCS桌面端-软件介绍 </summary>
+<summary  >  <b>OCS桌面端-图片预览</b> </summary>
+ 
+<img width="40%" src={require("/static/img/app/index.png").default} />
 
-- OCS 桌面端软件， 适合多人使用 👨‍👧‍👧 浏览器多开/分身 网课账号管理 自动登录 等功能
-- 使用一键初始化按钮，可以直接安装脚本和脚本管理器，创建浏览器后点击运行即可一键刷课，傻瓜式操作。
+<img width="40%" src={require("/static/img/app/init_show_case.png").default} />
 
-<img width="50%" src={require("/static/img/app/index.png").default} />
+<img width="40%" src={require("/static/img/app/app_list.png").default} />
 
-<img width="50%" src={require("/static/img/app/init_show_case.png").default} />
-
-<img width="50%" src={require("/static/img/app/app_list.png").default} />
-
-<img width="50%" src={require("/static/img/app/script_list.png").default} />
-
-</details>
-
-<details >
-
-<summary > 视频使用教程 </summary>
-
-> 视频最后出现了 OCS 脚本，后续可以按照脚本上面的提示进行网课学习
-
-<iframe
-  src="https://cdn.ocsjs.com/app/resources/video/app-use-guide.mp4"
-  frameborder="0"
-  allow="encrypted-media"
-  allowfullscreen="true"
-  style={{ width: "100%", height: "50vh" }}
-></iframe>
+<img width="40%" src={require("/static/img/app/script_list.png").default} />
 
 </details>
 
@@ -48,7 +31,7 @@ title: 软件教程
 
 :::
 
-:::info 如果 edge 下载后弹出类似的框，1.鼠标放到上面会出现三个点，然后点击选择保留即可
+:::info 如果 edge 浏览器 下载后弹出类似的框，1.鼠标放到上面会出现三个点 2.然后点击选择保留即可
 
 <div style={{display:"flex",  alignItems:"top" , flexWrap:"wrap", gap:"12px"}}>
 
@@ -81,7 +64,21 @@ style={{ width: "50%" }}
 
 ### 软件下载列表
 
-> 下载后会有使用的教程，非常简单。
+<details >
+
+<summary > <b>视频使用教程</b> </summary>
+
+> 视频最后出现了 OCS 脚本，后续可以按照脚本上面的提示进行网课学习
+
+<iframe
+  src="https://cdn.ocsjs.com/app/resources/video/app-use-guide.mp4"
+  frameborder="0"
+  allow="encrypted-media"
+  allowfullscreen="true"
+  style={{ width: "100%", minHeight: "400px" }}
+></iframe>
+
+</details>
 
 #### OCS 桌面端软件
 

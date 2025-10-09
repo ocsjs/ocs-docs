@@ -5,6 +5,10 @@ tags:
   - OCS脚本
 ---
 
+:::info 用于自动学习 `超星学习通`、`知道智慧树`、`职教云`、`智慧职教` 等多个网课
+
+:::
+
 ### 使用须知
 
 :::warning 不要使用 QQ 、360 等浏览器（不兼容） ！
@@ -16,17 +20,37 @@ tags:
 
 <div style={{display:'flex', alignItems:'center', border: '1px solid #bfbfbf', borderRadius:'12px',margin:'4px 0px'}}>
 
-<img src="https://user-images.githubusercontent.com/50533276/166101774-c62bfc5a-89fc-42e2-9638-484847bb0dd7.png" width="64" height="64" style={{borderRadius:'12px', marginRight:'24px'}} />
+<img
+src="https://user-images.githubusercontent.com/50533276/166101774-c62bfc5a-89fc-42e2-9638-484847bb0dd7.png"
+width="64"
+height="64"
+style={{ borderRadius: "12px", marginRight: "24px" }}
+/>
 
-<span>Edge 微软浏览器 <a href="https://www.microsoft.com/zh-cn/edge/download" target="_blank"> https://www.microsoft.com/zh-cn/edge/download </a> </span>
+<span>
+  Edge 微软浏览器
+  <a href="https://www.microsoft.com/zh-cn/edge/download" target="_blank">
+    https://www.microsoft.com/zh-cn/edge/download
+  </a>
+</span>
 
 </div>
 
 <div style={{display:'flex', alignItems:'center', border: '1px solid #bfbfbf', borderRadius:'12px',margin:'4px 0px'}}>
 
-<img src="https://user-images.githubusercontent.com/50533276/166101769-cc4cf43a-df3f-479a-bd19-e5d4033961dd.png" width="64" height="64" style={{borderRadius:'12px', marginRight:'24px'}}/>
+<img
+src="https://user-images.githubusercontent.com/50533276/166101769-cc4cf43a-df3f-479a-bd19-e5d4033961dd.png"
+width="64"
+height="64"
+style={{ borderRadius: "12px", marginRight: "24px" }}
+/>
 
-<span>Chrome 谷歌浏览器 <a href="https://www.google.cn/chrome/index.html" target="_blank"> https://www.google.cn/chrome/index.html </a></span>
+<span>
+  Chrome 谷歌浏览器
+  <a href="https://www.google.cn/chrome/index.html" target="_blank">
+    https://www.google.cn/chrome/index.html
+  </a>
+</span>
 
 </div>
 
@@ -72,7 +96,9 @@ tags:
 
 <details>
 
-<summary> <b>Tampermonkey 安装-图文教程：</b> </summary>
+<summary> 
+  <b>Tampermonkey 安装-图文教程：</b> 
+</summary>
 
 - `Tampermonkey 链接`： <a href="https://www.tampermonkey.net/" target="_blank"> https://www.tampermonkey.net/</a>
 
@@ -117,7 +143,9 @@ tags:
 
 <details>
 
-<summary> <b> 其他版本安装 ：</b> </summary>
+<summary> 
+  <b> 其他版本安装 ：</b> 
+</summary>
 
 脚本猫脚本站-历史版本：https://scriptcat.org/script-show-page/367/version
 
@@ -144,7 +172,9 @@ github-历史版本：https://github.com/ocsjs/ocsjs/releases （还有预发布
 
 脚本默认带有视频，ppt，等学习功能，如果想开启自动答题功能，请查看
 
-<a href="https://docs.ocsjs.com/docs/work" target="_blank">自动答题教程 ： https://docs.ocsjs.com/docs/work </a>
+<a href="https://docs.ocsjs.com/docs/work" target="_blank">
+  自动答题教程 ： https://docs.ocsjs.com/docs/work{" "}
+</a>
 
 ## 最后一步 学习如何更新/管理脚本
 
