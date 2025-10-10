@@ -5,43 +5,48 @@ tags:
   - OCS脚本
 ---
 
-:::info 用于自动学习 `超星学习通`、`知道智慧树`、`职教云`、`智慧职教` 等多个网课
+- [使用须知](#使用须知)
+- [第一步 安装 脚本管理器](#第一步-安装-脚本管理器)
+- [第二步 安装脚本](#第二步-安装脚本)
+- [第三步 进入网课页面](#第三步-进入网课页面)
+- [第四步 开启自动答题](#第四步-开启自动答题)
+- [最后一步 学习如何更新/管理脚本](#最后一步-学习如何更新/管理脚本)
+- [注意事项](#注意事项)
 
-<div> 安装后，打开网课平台，等待页面上出现脚本窗口，根据面板提示操作，进入视频学习，作业考试页面即可自动运行。 </div>
-<div> 图片预览：</div>
+---
+
+用于自动学习 `超星学习通`、`知道智慧树`、`职教云`、`智慧职教` 等多个网课
+
+安装后，打开网课平台，等待页面上出现脚本窗口，根据面板提示操作，进入视频学习，作业考试页面即可自动运行。
+
+**图片预览：**
 
 <div style={{ maxWidth:"1000px" }}>
 
 <div style={{display:"flex"  }}>
 
 <img
-src="/img/script/study_show_case_cx.png" style={{maxWidth: '33%'}}
+src="/img/script/study_show_case_cx.png" style={{maxWidth: '50%'}}
 />
 
 <img
-src="/img/script/study_show_case_zhs.png" style={{maxWidth: '33%'}}
-/>
-
-<img
-src="/img/script/exam_show_case.png" style={{maxWidth: '33%'}}
+src="/img/script/study_show_case_zhs.png" style={{maxWidth: '50%'}}
 />
 
 </div>
 
  </div>
 
-:::
-
 ### 使用须知
 
 :::warning 不要使用 QQ 、360 等浏览器（不兼容） ！
 :::
 
-<details>
+<details open>
 
 <summary>目前兼容的浏览器（点击展开）：</summary>
 
-<div style={{display:'flex', alignItems:'center', border: '1px solid #bfbfbf', borderRadius:'12px',margin:'4px 0px'}}>
+<div style={{display:'flex', alignItems:'center', margin:'4px 0px'}}>
 
 <img
 src="https://user-images.githubusercontent.com/50533276/166101774-c62bfc5a-89fc-42e2-9638-484847bb0dd7.png"
@@ -51,15 +56,15 @@ style={{ borderRadius: "12px", marginRight: "24px" }}
 />
 
 <span>
-  Edge 微软浏览器
+  <span>Edge 微软浏览器</span>
   <a href="https://www.microsoft.com/zh-cn/edge/download" target="_blank">
-    https://www.microsoft.com/zh-cn/edge/download
+    下载链接： https://www.microsoft.com/zh-cn/edge/download
   </a>
 </span>
 
 </div>
 
-<div style={{display:'flex', alignItems:'center', border: '1px solid #bfbfbf', borderRadius:'12px',margin:'4px 0px'}}>
+<div style={{display:'flex', alignItems:'center', margin:'4px 0px'}}>
 
 <img
 src="https://user-images.githubusercontent.com/50533276/166101769-cc4cf43a-df3f-479a-bd19-e5d4033961dd.png"
@@ -69,9 +74,9 @@ style={{ borderRadius: "12px", marginRight: "24px" }}
 />
 
 <span>
-  Chrome 谷歌浏览器
+  <span>Chrome 谷歌浏览器</span>
   <a href="https://www.google.cn/chrome/index.html" target="_blank">
-    https://www.google.cn/chrome/index.html
+   下载链接： https://www.google.cn/chrome/index.html
   </a>
 </span>
 
