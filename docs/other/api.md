@@ -29,7 +29,7 @@ tags:
 
 > OCS 提供了强大的 [`题库配置解析器`](https://github.com/enncy/online-course-script/blob/3.0/packages/scripts/src/browser/core/worker/answer.wrapper.handler.ts)，你可以对接大多数的题库进行使用
 
-**类型** : Array<[`AnswererWrapper`](#answererwrapper)>
+**类型** : Array\<[`AnswererWrapper`](#answererwrapper)\>
 
 **参数** :
 
@@ -38,11 +38,11 @@ tags:
 | url         | string                         | 是   | 请求路径，可已解析[特殊占位符](#特殊占位符)                                                                                                           |
 | name        | string                         | 是   | 题库名字                                                                                                                                              |
 | homepage    | string                         | 否   | 题库网址                                                                                                                                              |
-| data        | Record<string, string>         | 否   | 传递的参数, get 请求将会添加到 url 后面， post 请求会生成请求体 ， 可已解析[特殊占位符](#特殊占位符) ， 或者[自定义字段解析方法](#自定义字段解析方法) |
+| data        | Record\<string, string\>       | 否   | 传递的参数, get 请求将会添加到 url 后面， post 请求会生成请求体 ， 可已解析[特殊占位符](#特殊占位符) ， 或者[自定义字段解析方法](#自定义字段解析方法) |
 | method      | "post" \| "get"                | 否   | 默认 `get` , 请求方法                                                                                                                                 |
 | contentType | "json" \| "text"               | 否   | 默认 `json` , 定义 handler 中的参数类型                                                                                                               |
 | type        | "fetch" \| "GM_xmlhttpRequest" | 否   | 默认 `fetch` , 请求类型, `fetch` 是用浏览器原生 API， `GM_xmlhttpRequest` 使用油猴自带 API , 可进行跨域。                                             |
-| headers     | Record<string, string>         | 否   | 默认 `{}`                                                                                                                                             |
+| headers     | Record\<string, string\>       | 否   | 默认 `{}`                                                                                                                                             |
 | handler     | string                         | 是   | 详情请看下面说明                                                                                                                                      |
 
 `handler` 选项是个字符串 ， 使用 Function(string) 构造方法进行解析生成方法，方法传入的第一个参数是 `请求获取到的文本/数据（使用 contentType 定义的数据）`
@@ -150,7 +150,7 @@ handler 例子：
 
 > 假设有一个接口 : https://example.com/search?title=1+2,2+3
 
-> 此接口返回 {code: 1, data: { answers: [3 , 5] , title:'1+2' }, msg:'成功'}
+> 此接口返回 `{code: 1, data: { answers: [3 , 5] , title:'1+2' }, msg:'成功'}`
 
 ```ts
 // 这段代码是模仿脚本中的调用方式
@@ -186,7 +186,7 @@ defaultAnswerWrapperHandler(
 
 > 4.7.21 版本新增
 
-data 中的数据可以进行自定义解析，原理与 handler 一致，第一个参数是脚本的上下文参数 env: {title, options, type}
+data 中的数据可以进行自定义解析，原理与 handler 一致，第一个参数是脚本的上下文参数 env: `{title, options, type}`
 
 注意，OCS 只会检测第一层嵌套的字段，如果是对象，并且有 handler 字段，则会进行 `字段解析` ，
 如果是字符串，则会进行 [特殊占位符](#特殊占位符) 解析，如果是其他类型，则是按照数据传输。
@@ -307,9 +307,9 @@ return (res) => {
 - `${xxx}` 是变量占位符，是根据脚本中调用的 defaultAnswerWrapperHandler 的第一个参数进行替换，如果脚本调用时没传，则不会替换
   - 可以使用在 `data` 和 `url` 字段中
   - 可以解析
-    - ${title}: 题目标题
-    - ${type}: 题目类型，可能为空
-    - ${options}: 题目选项，可能为空
+    - `${title}`: 题目标题
+    - `${type}`: 题目类型，可能为空
+    - `${options}`: 题目选项，可能为空
 
 所以最终填写的 `题库配置` 为： （不要使用这个，这个只是例子！！！！）
 

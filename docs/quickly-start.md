@@ -12,7 +12,7 @@ title: 使用教程
 
 <div style={{marginTop: '12px'}} ></div>
 
-🔗 [使用教程：https://docs.ocsjs.com/docs/app](./app.md)
+🔗 [使用教程：https://docs.ocsjs.com/docs/app](./app.mdx)
 
 :::
 
