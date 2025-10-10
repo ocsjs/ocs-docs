@@ -1,11 +1,8 @@
 {
-    "cSpell.words": [
-        "scriptcat",
-        "Tampermonkey",
-        "userscript"
-    ],
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit"
-    },
+  "cSpell.words": ["scriptcat", "Tampermonkey", "userscript"],
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.indentSize": 2
 }

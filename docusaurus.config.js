@@ -1,8 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const { themes } = require('prism-react-renderer');
 
 const OCS_VERSION = '3.17.4';
 
@@ -167,8 +165,8 @@ const config = {
         copyright: `Copyright © 2020 - ${new Date().getFullYear()} OCS, Built with Docusaurus.`
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme
+        theme: themes.github,
+        darkTheme: themes.dracula
       }
 
     })

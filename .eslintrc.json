@@ -3,10 +3,7 @@
     "browser": true,
     "es2021": true
   },
-  "extends": [
-    "plugin:react/recommended",
-    "standard"
-  ],
+  "extends": ["plugin:react/recommended", "standard"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "parser": "babel-eslint",
@@ -16,14 +13,9 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": [
-    "react"
-  ],
+  "plugins": ["react"],
   "rules": {
-    "semi": [
-      2,
-      "always"
-    ],
+    "semi": [2, "always"],
     "max-len": [
       2,
       {
@@ -33,10 +25,7 @@
         "ignoreStrings": true
       }
     ],
-    "indent": [
-      "error",
-      2
-    ],
+    "indent": ["ignore", 2],
     "no-undef": "off",
     "no-unused-vars": "off",
     "space-before-function-paren": "off",
@@ -46,12 +35,7 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     ] //should add ".ts" if typescript project
   }
