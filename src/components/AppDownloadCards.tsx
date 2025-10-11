@@ -2,7 +2,7 @@
 
 
 import { UAParser } from 'ua-parser-js'
-import { BasicModal } from './Modal/index';
+import { BasicDialog } from './Dialog/index';
 import React from 'react';
 import AppDownloadAlert from '../../docs/app.download_alert.mdx'
 import Divider from '@mui/material/Divider';
@@ -155,9 +155,8 @@ export const AppDownloadCards = () => {
                 ))}
             </div>
 
-            <BasicModal
-
-
+            <BasicDialog
+                title='下载须知'
                 confirmText="我已阅读，确认安装"
                 showCancelButton={true}
                 open={open}
@@ -169,7 +168,7 @@ export const AppDownloadCards = () => {
                     window.open(current_url, '_blank');
                 }} >
                 <AppDownloadAlert />
-            </BasicModal>
+            </BasicDialog>
         </>
     )
 }

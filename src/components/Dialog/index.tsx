@@ -1,7 +1,6 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
+import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material';
 
 const style = {
     position: 'absolute',
@@ -15,8 +14,8 @@ const style = {
 };
 
 
-export function BasicModal({ open, children, onClose, onConfirm, confirmText, closeableDelay, showCancelButton, maskCloseable }: {
-    open: boolean, children: React.ReactNode, onClose: () => void, onConfirm?: () => void, confirmText?: string, closeableDelay?: number, showCancelButton?: boolean, maskCloseable?: boolean
+export function BasicDialog({ title, open, children, onClose, onConfirm, confirmText, closeableDelay, showCancelButton, maskCloseable }: {
+    title?: string, open: boolean, children: React.ReactNode, onClose: () => void, onConfirm?: () => void, confirmText?: string, closeableDelay?: number, showCancelButton?: boolean, maskCloseable?: boolean
 }) {
 
     const [countdown, setCurrentCountdown] = React.useState<number>(closeableDelay || 0);
@@ -42,19 +41,26 @@ export function BasicModal({ open, children, onClose, onConfirm, confirmText, cl
 
     return (
         <div>
-            <Modal
+            <Dialog
                 open={open}
                 onClose={(e, reason) => {
                     if (maskCloseable !== false || reason !== "backdropClick") {
                         onClose()
                     }
                 }}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
+                aria-labelledby="alert-dialog-title"
+                aria-describedby="alert-dialog-description"
             >
-                <Box sx={{ ...style, width: 'auto' }}>
-                    {children}
-                    <div style={{ display: 'flex', justifyContent: 'end' }}>
+                {title && <DialogTitle id="alert-dialog-title">
+                    {title}
+                </DialogTitle>}
+                <DialogContent>
+                    <DialogContentText id="alert-dialog-description">
+                        {children}
+                    </DialogContentText>
+                </DialogContent>
+                <DialogActions>
+                    <div style={{ display: 'flex', justifyContent: 'end', padding: '4px' }}>
                         {showCancelButton && <Button variant="outlined" onClick={onClose} style={{ marginTop: '12px' }}>取消</Button>}
                         <Button
                             disabled={countdown > 0}
@@ -65,8 +71,8 @@ export function BasicModal({ open, children, onClose, onConfirm, confirmText, cl
                             }}
                             style={{ marginTop: '12px', marginLeft: '12px' }}> {confirmText || '确认'}  {countdown > 0 && <span style={{ marginLeft: '4px' }}> ({countdown}秒后可关闭)</span>}</Button>
                     </div>
-                </Box>
-            </Modal>
+                </DialogActions>
+            </Dialog>
         </div>
     );
 }

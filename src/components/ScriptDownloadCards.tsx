@@ -1,6 +1,6 @@
 import { Alert, Button } from "@mui/material";
 import { useEffect, useState } from "react";
-import { BasicModal } from './Modal/index';
+import { BasicDialog } from './Dialog/index';
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import ScriptInstallAlert from '../../docs/script.install.alert.mdx'
@@ -52,6 +52,11 @@ export const ScriptDownloadCards = () => {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+
+
+    const [log_open, setLogOpen] = useState(false);
+    const handleLogOpen = () => setLogOpen(true);
+    const handleLogClose = () => setLogOpen(false);
 
 
     const DownloadCard = ({ children, name, desc, url, type }) => {
@@ -116,7 +121,8 @@ export const ScriptDownloadCards = () => {
 
     return (
         <>
-            <BasicModal
+            <BasicDialog
+                title="安装必读"
                 confirmText="我已阅读，确认安装"
                 showCancelButton={true}
                 open={open}
@@ -129,11 +135,24 @@ export const ScriptDownloadCards = () => {
                 }}
             >
                 <ScriptInstallAlert />
-            </BasicModal>
+            </BasicDialog>
+
+            <BasicDialog
+                title={"更新日志 - " + data?.['last-version']}
+                open={log_open}
+                maskCloseable={true}
+                onClose={handleLogClose}
+            >
+                {data?.['notes'].map((note, index) => (
+                    <div key={index} style={{ marginBottom: '12px' }}>
+                        {note}
+                    </div>
+                ))}
+            </BasicDialog>
 
             {error ? <Alert severity="error">{error}</Alert> : null}
             {loading ? <Alert severity="info">正在获取最新版本信息...</Alert> : null}
-            {data ? <Alert severity="success">当前最新版本：{data['last-version']}，更新日志：<Button size={'small'} variant="text">点击查看</Button></Alert> : null}
+            {data ? <Alert severity="success">当前最新版本：{data['last-version']}，更新日志：<Button size={'small'} variant="text" onClick={handleLogOpen}>点击查看</Button></Alert> : null}
 
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", flexWrap: "wrap", gap: "24px" }}>
 
