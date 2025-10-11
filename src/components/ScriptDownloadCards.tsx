@@ -106,7 +106,7 @@ export const ScriptDownloadCards = () => {
         setLoading(true);
         const fetchPosts = async () => {
             const data = await fetch('https://cdn.ocsjs.com/ocs-version.json?t=' + Date.now()).then(res => res.json()).catch((e) => {
-                setError('获取最新版本信息失败，请稍后再试：' + String(e))
+                setError('获取稳定版本信息失败，请稍后再试：' + String(e))
                 console.error(e)
             }).finally(() => {
                 setLoading(false);
@@ -151,8 +151,8 @@ export const ScriptDownloadCards = () => {
             </BasicDialog>
 
             {error ? <Alert severity="error">{error}</Alert> : null}
-            {loading ? <Alert severity="info">正在获取最新版本信息...</Alert> : null}
-            {data ? <Alert severity="success">当前最新版本：{data['last-version']}，更新日志：<Button size={'small'} variant="text" onClick={handleLogOpen}>点击查看</Button></Alert> : null}
+            {loading ? <Alert severity="info">正在获取稳定版本信息...</Alert> : null}
+            {data ? <Alert severity="success">当前稳定版本：{data['last-version']}，更新日志：<Button size={'small'} variant="text" onClick={handleLogOpen}>点击查看</Button></Alert> : null}
 
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", flexWrap: "wrap", gap: "24px" }}>
 
