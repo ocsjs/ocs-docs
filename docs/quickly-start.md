@@ -24,7 +24,7 @@ title: 使用教程
 
 <div style={{marginTop: '12px'}} ></div>
 
-🔗 [使用教程：https://docs.ocsjs.com/docs/script](./script.md)
+🔗 [使用教程：https://docs.ocsjs.com/docs/script](./script.mdx)
 :::
 
 ### 联系我们

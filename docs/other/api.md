@@ -25,7 +25,7 @@ tags:
 
 所有网课学习核心功能都在 `packages/scripts/src/projects/` 文件夹下
 
-### AnswererWrapper 题库配置
+### AnswererWrapper 题库配置 {#AnswererWrapper}
 
 > OCS 提供了强大的 [`题库配置解析器`](https://github.com/enncy/online-course-script/blob/3.0/packages/scripts/src/browser/core/worker/answer.wrapper.handler.ts)，你可以对接大多数的题库进行使用
 
@@ -182,7 +182,7 @@ defaultAnswerWrapperHandler(
 
 ```
 
-### 自定义字段解析方法
+### 自定义字段解析方法 {#custom-field-handler}
 
 > 4.7.21 版本新增
 
@@ -325,7 +325,9 @@ return (res) => {
 ]
 ```
 
-## 全域名通用版本
+<div id="全域名通用版本"></div>
+
+## 全域名通用版本 {#common-version}
 
 > 开发人员专用版本，@connect 中自带 \* 全域名通配符，可以跨域请求，但是会弹出提示框，让用户选择是否允许跨域请求。
 

@@ -39,8 +39,8 @@ function HomepageHeader() {
           <Link
             style={{ fontSize: '18px' }}
             className={clsx('button button--secondary  button--sm ', styles.actions, styles['guide-btn'])}
-            href='/docs/script#第二步-安装脚本'
-            target='_blank' rel="noreferrer"
+            href='/docs/script'
+            rel="noreferrer"
           >
             📥 快捷安装 刷课脚本
           </Link>
@@ -49,8 +49,8 @@ function HomepageHeader() {
           <Link
             style={{ fontSize: '18px' }}
             className={clsx('button button--secondary  button--sm ', styles.actions, styles['guide-btn'])}
-            href='/docs/app#软件下载列表'
-            target='_blank' rel="noreferrer"
+            href='/docs/app'
+            rel="noreferrer"
           >
             🖥️ 快捷安装 桌面软件
           </Link>

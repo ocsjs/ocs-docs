@@ -24,6 +24,7 @@
     "@emotion/styled": "^11.14.1",
     "@headlessui/react": "^2.2.9",
     "@mdx-js/react": "^3.0.0",
+    "@mui/icons-material": "^7.3.4",
     "@mui/material": "^7.3.4",
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.3.0",

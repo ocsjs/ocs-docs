@@ -1,0 +1,171 @@
+---
+title: 脚本教程
+tags:
+  - 教程
+  - OCS脚本
+---
+
+import { ScriptDownloadCards } from '../src/components/ScriptDownloadCards.tsx';  
+import ScriptInstallAlert from './script.install.alert.mdx';
+import Divider from '@mui/material/Divider';
+
+
+**OCS 网课助手**：用于自动学习 `超星学习通`、`知道智慧树`、`职教云`、`智慧职教`、`中国大学MOOC` 等多个网课
+ 
+使用教程： [🔗点击前往](#使用教程)
+
+
+
+<Divider style={{margin: '12px 0px'}}>快捷安装</Divider>
+  
+<ScriptDownloadCards />
+
+<Divider style={{margin: '12px 0px'}}>图片预览</Divider>
+
+<div style={{ maxWidth:"1000px" }}>
+
+  <div style={{display:"flex"  }}>
+
+  <img src="/img/script/study_show_case_cx.png" style={{ maxWidth: "50%" }} />
+
+  <img src="/img/script/study_show_case_zhs.png" style={{ maxWidth: "50%" }} />
+
+  </div>
+
+</div>
+
+<Divider style={{margin: '12px 0px'}}>教程目录</Divider>
+
+- [使用教程](#使用教程)
+- [第一步 安装 脚本管理器](#第一步-安装-脚本管理器)
+- [第二步 安装脚本](#第二步-安装脚本)
+- [第三步 进入网课页面](#第三步-进入网课页面)
+- [第四步 开启自动答题](#open-answerer)
+- [最后一步 学习如何更新/管理脚本](#update-and-manage)
+- [注意事项](#注意事项)
+
+---
+
+
+## 使用教程
+
+
+## 第一步 安装 脚本管理器
+
+:::warning 以下两个脚本管理器只需安装其中一个即可 ！
+:::
+
+<details>
+
+<summary>点击展开</summary>
+
+> 🎉 脚本猫是 [一之哥](https://blog.icodef.com/) 开发的国产脚本管理器哦，多多支持~
+
+<details>
+<summary> <b> 脚本猫 安装-图文教程：</b> </summary>
+
+- `脚本猫链接`： https://docs.scriptcat.org
+
+<div style={{maxWidth:"400px"}}>
+
+![1](../static/img/script/scriptcat_download_1.png)
+
+![2](../static/img/script/scriptcat_download_2.png)
+
+![3](../static/img/script/scriptcat_download_3.png)
+
+</div>
+ 
+<div style={{margin:"12px 0px"}}>
+
+点击获取即可安装。安装后，即可查看第二步。
+
+</div>
+
+</details>
+
+> Tampermonkey（篡改猴/有些人也叫他油猴，但油猴其实是 GreaseMonkey ， 最早出现的脚本管理器）
+
+<details>
+
+<summary>
+  <b>Tampermonkey 安装-图文教程：</b>
+</summary>
+
+- `Tampermonkey 链接`： https://www.tampermonkey.net/
+
+<div style={{maxWidth:"400px"}}>
+
+![1](../static/img/script/tampermonkey_download_1.png)
+
+![2](../static/img/script/tampermonkey_download_2.png)
+
+</div>
+
+点击获取即可安装。安装后，即可查看第二步。
+
+</details>
+</details>
+
+<div id="第二步-安装脚本"></div>
+
+## 第二步 安装脚本 {#install-script}
+
+<ScriptDownloadCards />
+
+
+## 第三步 进入网课页面
+
+打开网课平台，等待页面上出现脚本窗口，根据面板提示操作，登录账号，进入视频学习，作业考试页面即可自动运行。
+
+<div style={{display:"flex",  alignItems:"top" , flexWrap:"wrap", gap:"12px"}}>
+
+<img src="/img/script/show_case_cx.png" style={{ width: "48%" }} />
+<img src="/img/script/show_case_zhs.png" style={{ width: "48%" }} />
+
+</div>
+
+<div id="第四步-开启自动答题"></div>
+## 第四步 开启自动答题 {#open-answerer}
+
+脚本默认带有视频，PPT翻页，等学习功能，如果想开启 **自动答题** 功能，请查看
+
+自动答题教程 ： https://docs.ocsjs.com/docs/work
+
+<div id="最后一步-学习如何更新管理脚本"></div>
+## 最后一步 学习如何更新/管理脚本 {#update-and-manage}
+
+### 更新脚本教程 
+
+链接：https://docs.ocsjs.com/docs/update
+
+<div id="关闭脚本教程"></div>
+
+### 关闭脚本教程 
+
+> 注意每个脚本管理器的页面是不一样的，但是关闭逻辑大致相同。
+
+1. 打开右上角的脚本管理器，点击脚本管理。
+
+![脚本管理](../static/img/common/script_manage.png)
+
+2. 然后进入脚本列表，找到左边开关按钮，点击即可关闭
+
+![脚本关闭](../static/img/common/script_close.png)
+
+ 
+### 删除脚本教程 
+
+> 注意每个脚本管理器的页面是不一样的，但是删除逻辑大致相同。
+
+1. 打开右上角的脚本管理器，点击脚本管理。
+
+![脚本管理](../static/img/common/script_manage.png)
+
+2. 然后进入脚本列表，找到右边删除按钮，点击即可删除
+
+![脚本删除](../static/img/common/script_delete.png)
+
+
+---
+教程结束

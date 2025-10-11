@@ -8,7 +8,6 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 400,
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
@@ -16,7 +15,31 @@ const style = {
 };
 
 
-export function BasicModal({ open, children, onClose, width, maskCloseable }: { open: boolean, children: React.ReactNode, onClose: () => void, width?: number, maskCloseable?: boolean }) {
+export function BasicModal({ open, children, onClose, onConfirm, confirmText, closeableDelay, showCancelButton, maskCloseable }: {
+    open: boolean, children: React.ReactNode, onClose: () => void, onConfirm?: () => void, confirmText?: string, closeableDelay?: number, showCancelButton?: boolean, maskCloseable?: boolean
+}) {
+
+    const [countdown, setCurrentCountdown] = React.useState<number>(closeableDelay || 0);
+    React.useEffect(() => {
+        setCurrentCountdown(closeableDelay || 0);
+        if (closeableDelay && open) {
+            const interval = setInterval(() => {
+                setCurrentCountdown((prev) => {
+                    if (prev <= 1) {
+                        clearInterval(interval);
+                        return 0;
+                    }
+                    return prev - 1;
+                });
+            }, 1000);
+            return () => {
+                clearInterval(interval);
+            };
+        }
+    }, [open]);
+
+
+
     return (
         <div>
             <Modal
@@ -29,10 +52,18 @@ export function BasicModal({ open, children, onClose, width, maskCloseable }: { 
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
-                <Box sx={{ ...style, width: width || 400 }}>
+                <Box sx={{ ...style, width: 'auto' }}>
                     {children}
-                    <div style={{ display: 'flex', justifyContent: 'center' }}>
-                        <Button variant="contained" onClick={onClose} style={{ marginTop: '12px' }}>确定</Button>
+                    <div style={{ display: 'flex', justifyContent: 'end' }}>
+                        {showCancelButton && <Button variant="outlined" onClick={onClose} style={{ marginTop: '12px' }}>取消</Button>}
+                        <Button
+                            disabled={countdown > 0}
+                            variant="contained"
+                            onClick={() => {
+                                onConfirm?.();
+                                onClose();
+                            }}
+                            style={{ marginTop: '12px', marginLeft: '12px' }}> {confirmText || '确认'}  {countdown > 0 && <span style={{ marginLeft: '4px' }}> ({countdown}秒后可关闭)</span>}</Button>
                     </div>
                 </Box>
             </Modal>

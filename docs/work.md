@@ -33,4 +33,4 @@ tags:
 
 > 小白勿入
 
-[https://docs.ocsjs.com/docs/other/api.md#answererwrapper-题库配置](/docs/other/api.md#answererwrapper-题库配置)
+[https://docs.ocsjs.com/docs/other/api.md#answererwrapper-题库配置](/docs/other/api.md#AnswererWrapper)
