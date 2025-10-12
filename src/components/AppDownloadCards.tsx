@@ -55,7 +55,9 @@ export const AppDownloadCards = () => {
     const handleClose = () => setOpen(false);
     const [current_url, setCurrentUrl] = React.useState<string | null>(null);
 
-    const current_platform = new UAParser().getResult().os.name || 'Other'
+    const ua_result = new UAParser().getResult()
+    console.log(ua_result);
+    const current_platform = ua_result.os.name || 'Other'
 
 
     const DownloadCard = ({ children, name, desc, download_link, other_link, other_text, os, current_platform }) => {
