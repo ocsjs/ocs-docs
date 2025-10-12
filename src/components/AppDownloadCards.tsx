@@ -55,11 +55,11 @@ export const AppDownloadCards = () => {
     const handleClose = () => setOpen(false);
     const [current_url, setCurrentUrl] = React.useState<string | null>(null);
 
-    const os = new UAParser().getResult().os.name || 'Other'
+    const current_platform = new UAParser().getResult().os.name || 'Other'
 
 
     const DownloadCard = ({ children, name, desc, download_link, other_link, other_text, os, current_platform }) => {
-        const valid_download = current_platform.toLowerCase() === os?.toLowerCase()
+        const valid_download = current_platform.toLowerCase().includes((os || '').toLowerCase());
 
         return (
             <div
@@ -125,9 +125,9 @@ export const AppDownloadCards = () => {
         <>
             <Divider id="软件下载列表" style={{ marginBottom: 12 }}>下载列表</Divider>
             {
-                [download_infos.find(item => item.os?.toLowerCase() === os?.toLowerCase())].filter(Boolean).map((item, index) => (
+                [download_infos.find(item => item.os?.toLowerCase() === current_platform?.toLowerCase())].filter(Boolean).map((item, index) => (
                     <Alert key={index} style={{ marginBottom: 24 }}  >
-                        检测到您当前系统为 <b>{os}</b> 当前软件最新版本为 <b>{CURRENT_OCS_VERSION}</b> <br />
+                        检测到您当前系统为 <b>{current_platform}</b> 当前软件最新版本为 <b>{CURRENT_OCS_VERSION}</b> <br />
                         点击 <b>下方按钮</b> 或者 <b>链接下载</b>： <a href={item?.download_link} target="_blank" rel="noreferrer">{item?.download_link}</a>
                     </Alert>
                 ))
@@ -148,7 +148,7 @@ export const AppDownloadCards = () => {
                                 handleOpen()
                             }
                         }}>
-                        <DownloadCard current_platform={os} os={item.os} key={item.name} name={item.name} desc={item.desc} download_link={item.download_link} other_link={item.other_link} other_text={item.other_text} >
+                        <DownloadCard current_platform={current_platform} os={item.os} key={item.name} name={item.name} desc={item.desc} download_link={item.download_link} other_link={item.other_link} other_text={item.other_text} >
                             {item.icon}
                         </DownloadCard>
                     </div>
