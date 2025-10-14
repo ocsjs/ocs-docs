@@ -10,7 +10,7 @@ import Alert from '@mui/material/Alert';
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 
 
-export const CURRENT_OCS_VERSION = '2.9.3'
+export const CURRENT_OCS_VERSION = '2.9.10'
 
 
 
