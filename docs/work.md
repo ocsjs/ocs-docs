@@ -5,16 +5,22 @@ tags:
   - 题库配置
 ---
 
-## 官方题库配置 - 言溪题库
-
 :::info 免责声明
 
-脚本所有的功能均 **免费** ，不设置题库配置仍可使用脚本其他功能。
-如果题库配置需要收费，则是题库提供方的行为，**与脚本无关** 。
+脚本所有功能均 **免费** ，不设置题库仍可使用其他功能。
+如题库需收费，则是题库提供方的行为 。
 
 :::
 
-使用教程 ：[言溪题库使用教程 https://tk.enncy.cn](https://tk.enncy.cn)
+## 官方题库配置 - 言溪题库
+
+<div style={{display: 'flex', alignItems: 'center', marginBottom: '12px'}}>
+
+<img src="/img/tk.png" width="42" height="42" style={{ borderRadius: "12px", marginRight: "12px" }} />
+
+<div>使用教程 ：[言溪题库使用教程 https://tk.enncy.cn](https://tk.enncy.cn)</div>
+
+</div>
 
 ## 题库配置介绍
 
