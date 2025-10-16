@@ -18,3 +18,29 @@ tags:
 4. 启动浏览器
 5. 按照之前的脚本使用步骤进行使用即可。
 6. 注意！！！必须要用软件里面新建的浏览器，启动浏览器进行脚本运行，不然无法使用软件辅助。
+
+### 智慧树尺寸调整 {#resize}
+
+> 其他网课同理，目前只有智慧树，中国大学 mooc 会用到软件辅助
+
+开启软件辅助后，在智慧树的学习过程中，如果界面尺寸太小，会导致各种元素挤压到一起，使软件辅助难以点击到确切位置
+
+需要将智慧树的界面尺寸调整到合适的大小，比如说 50% 或者 75% 保证每个区域都能看到和点击 ，然后刷新页面重新学习即可。
+
+#### 正确示范：
+
+<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around',  }}>
+
+<img  src="/img/zhs-script-click-issue-resolve.png" />
+
+</div>
+
+#### 错误示范：
+
+<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around',  flexWrap: 'wrap', gap: '12px' }}>
+
+<img style={{width:'80%'}} src="/img/zhs-script-click-issue.png" />
+
+<img style={{width:'80%'}} src="/img/zhs-script-click-issue2.png" />
+
+</div>
