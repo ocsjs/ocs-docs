@@ -184,7 +184,7 @@ export const ScriptDownloadCards = () => {
                         }}>
                             {info.history_link ? (
                                 <a href={info.history_link} >历史版本-&gt;</a>
-                            ) : <span>暂无历史版本</span>}
+                            ) : <span>默认最新版本</span>}
                         </div>
 
                         <div />
