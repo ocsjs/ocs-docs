@@ -40,7 +40,8 @@ import ScriptMetadata from './ScriptMetadata.mdx';
 - <del> OCS 交流群（3） 688788798 （满）</del>
 - <del>OCS 交流群（4） 621872348（满）</del>
 - <del>OCS 交流群（5） 572473364 （满）</del>
-- <del>OCS 桌面版软件内测交流群 641347645（满）</del>
+- <del>OCS 桌面版软件交流群 641347645（满）</del>
+- OCS 桌面版软件交流群（2） 1061910911
 
 ## 项目背景
 
