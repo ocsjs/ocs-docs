@@ -22,6 +22,7 @@ export const download_infos = [
         desc: '仅适用于Win10/11',
         icon: <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2620" width="64" height="64"><path d="M99.555556 99.555556h391.964444v391.964444H99.555556V99.555556z" fill="#F25022" p-id="2621"></path><path d="M532.48 99.555556H924.444444v391.964444H532.48V99.555556z" fill="#7FBA00" p-id="2622"></path><path d="M99.555556 532.48h391.964444V924.444444H99.555556V532.48z" fill="#00A4EF" p-id="2623"></path><path d="M532.48 532.48H924.444444V924.444444H532.48V532.48z" fill="#FFB900" p-id="2624"></path></svg>,
         download_link: `https://cdn.ocsjs.com/app/download/ocs-${CURRENT_OCS_VERSION}-setup-win-x64.exe`,
+        zip_link: `https://cdn.ocsjs.com/app/download/ocs-${CURRENT_OCS_VERSION}-win-x64.zip`,
     },
     {
         os: 'mac',
@@ -117,6 +118,7 @@ export const AppDownloadCards = () => {
                     </div>
                 </a>
             </div>
+
         );
     }
 
@@ -136,23 +138,38 @@ export const AppDownloadCards = () => {
             }
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", flexWrap: "wrap", gap: "24px" }}>
                 {download_infos.map((item) => (
-                    <div
-                        key={item.name}
-                        className="download-card"
-                        style={{
-                            borderRadius: "12px",
-                            padding: "24px 0px 0px 0px",
-                            margin: "24px 0px",
-                            boxShadow: "0 0 8px rgb(0 0 0 / 10%)",
-                        }}
-                        onClick={() => {
-                            if (!item.other_link) {
-                                handleOpen()
-                            }
-                        }}>
-                        <DownloadCard current_platform={current_platform} os={item.os} key={item.name} name={item.name} desc={item.desc} download_link={item.download_link} other_link={item.other_link} other_text={item.other_text} >
-                            {item.icon}
-                        </DownloadCard>
+                    <div >
+                        <div
+                            className="download-card"
+                            key={item.name}
+                            style={{
+                                borderRadius: "12px",
+                                padding: "24px 0px 0px 0px",
+                                margin: "24px 0px 4px",
+                                boxShadow: "0 0 8px rgb(0 0 0 / 10%)",
+                            }}
+                            onClick={() => {
+                                if (!item.other_link) {
+                                    handleOpen()
+                                }
+                            }}>
+                            <DownloadCard current_platform={current_platform} os={item.os} key={item.name} name={item.name} desc={item.desc} download_link={item.download_link} other_link={item.other_link} other_text={item.other_text} >
+                                {item.icon}
+                            </DownloadCard>
+                        </div>
+
+                        {
+                            item.zip_link ? (
+                                <div style={{ fontSize: '12px', textAlign: 'center' }}>
+                                    <a href={item.zip_link} target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
+                                        <span>.zip版本</span>
+                                        <FileDownloadOutlinedIcon />
+                                    </a>
+                                </div>
+                            ) : (
+                                <div style={{ height: '24px' }}></div>
+                            )
+                        }
                     </div>
                 ))}
             </div>
