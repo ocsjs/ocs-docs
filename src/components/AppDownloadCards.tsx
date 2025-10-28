@@ -22,7 +22,7 @@ export const download_infos = [
         desc: '仅适用于Win10/11',
         icon: <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2620" width="64" height="64"><path d="M99.555556 99.555556h391.964444v391.964444H99.555556V99.555556z" fill="#F25022" p-id="2621"></path><path d="M532.48 99.555556H924.444444v391.964444H532.48V99.555556z" fill="#7FBA00" p-id="2622"></path><path d="M99.555556 532.48h391.964444V924.444444H99.555556V532.48z" fill="#00A4EF" p-id="2623"></path><path d="M532.48 532.48H924.444444V924.444444H532.48V532.48z" fill="#FFB900" p-id="2624"></path></svg>,
         download_link: `https://cdn.ocsjs.com/app/download/${CURRENT_OCS_VERSION}/ocs-${CURRENT_OCS_VERSION}-setup-win-x64.exe`,
-        zip_link: `https://cdn.ocsjs.com/app/download/${CURRENT_OCS_VERSION}/ocs-${CURRENT_OCS_VERSION}-win-x64.zip`,
+        zip_link: `https://cdn.ocsjs.com/app/download/${CURRENT_OCS_VERSION}/ocs-${CURRENT_OCS_VERSION}-setup-win-x64.zip`,
     },
     {
         os: 'mac',
