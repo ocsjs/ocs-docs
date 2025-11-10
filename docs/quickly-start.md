@@ -14,7 +14,7 @@ title: 使用教程
 
 > 不想安装软件，可以看 1:14 秒的纯浏览器脚本安装教程
 
-<video src="/guide.mp4" width="100%" controls="controls" />
+<video src="https://cdn.ocsjs.com/guide.mp4" width="100%" controls="controls" />
 
 ## 图文教程
 
