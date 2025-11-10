@@ -8,7 +8,7 @@ import ScriptInstallAlert from '../../docs/script.install.alert.mdx'
 export const download_infos = [
     {
         name: "官方来源",
-        desc: '✨推荐：腾讯云托管，稳定更新快',
+        desc: '✨推荐选这个：腾讯云托管，稳定访问更新快',
         icon: '/logos/ocs.png',
         type: 'file',
         url: `https://cdn.ocsjs.com/ocs.user.js`,
