@@ -8,7 +8,7 @@ tags:
 
 **脚本更新**
 
-脚本更新和安装链接：[🔗 点击前往](./script.mdx)
+脚本更新和安装链接：[🔗 点击前往](./script.mdx#quick-install)
 
 **软件更新**
 
