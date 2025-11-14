@@ -27,7 +27,9 @@ import ScriptMetadata from './ScriptMetadata.mdx';
 
 ### QQ 频道
 
-> 扫码加入，所有公告和通知都在这里发布
+> 手机扫码/网站链接 加入，所有公告和通知都在这里发布
+
+https://pd.qq.com/g/du8ic7y5zw
 
 <img   src="https://cdn.ocsjs.com/public/images/qq_pindao.jpg" alt="qq频道二维码"  width="200" />
 
