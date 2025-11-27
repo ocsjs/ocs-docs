@@ -4,6 +4,8 @@ title: 使用教程
 
 > 浏览器左上角菜单可以查看其他教程
 
+手机\平板等设备请查看：[https://docs.ocsjs.com/docs/mobile](/docs/mobile)
+
 ## 视频教程
 
 :::info 3 分钟通关 OCS 网课助手 全部安装方法！
