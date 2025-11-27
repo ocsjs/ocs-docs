@@ -15,4 +15,12 @@ tags:
 
 :::
 
+:::warning 注意！
+
+**切后台**挂网课，进行其他操作，**刷抖音玩游**戏，需要使用**手机分屏**功能，吧浏览器分小屏出来，否则会**影响脚本运行**。
+
+或者使用**平板、备用手机**挂着刷课。
+
+:::
+
 <video src="https://cdn.ocsjs.com/guide_mobile.mp4" poster="https://cdn.ocsjs.com/video_guide_mobile_poster.png" width="400px" style={{borderRadius: '4px', border:'1px solid black'}} controls="controls" />
