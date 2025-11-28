@@ -30,6 +30,12 @@ title: 疑问解答
 
 ## 超星
 
+### `为什么超星首页显示脚本，打开视频界面后脚本却不见了` {#cx-page-restore}
+
+有可能是误触排除按钮了，点击恢复即可。
+
+![cx-page-restore](../../static/img/cx-page-restore.png)
+
 ### `为什么超星不显示脚本，但其他网课显示` {#chaoxing-not-show}
 
 - 超星的域名变化无常， 常见的域名有 `chaoxing.com` , `org.cn` , `edu.cn` ， 如果你的域名不属于这些，请在脚本里自行添加
