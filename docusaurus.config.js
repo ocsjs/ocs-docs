@@ -129,15 +129,15 @@ const config = {
           },
 
           {
-            label: '社区/资源',
+            label: '联系方式',
             position: 'right',
-            items: community
+            to: '/docs/about#%E4%BA%A4%E6%B5%81%E6%96%B9%E5%BC%8F'
           },
-          {
-            label: '博客',
-            to: '/blog',
-            position: 'right'
-          },
+          // {
+          //   label: '博客',
+          //   to: '/blog',
+          //   position: 'right'
+          // },
           {
             href: 'https://github.com/ocsjs',
             label: 'GitHub',
