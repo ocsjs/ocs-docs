@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkocs_docs=globalThis.webpackChunkocs_docs||[]).push([[7472],{5513:s=>{s.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"\u6b22\u8fce\u6765\u5230OCS\u535a\u5ba2","permalink":"/blog/\u6b22\u8fce\u6765\u5230OCS\u535a\u5ba2","unlisted":false,"date":"2022-05-27T06:55:26.000Z"}]}')}}]);

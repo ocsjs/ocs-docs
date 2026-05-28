@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkocs_docs=globalThis.webpackChunkocs_docs||[]).push([[8947],{6600:s=>{s.exports=JSON.parse('{"authors":[{"name":"\u8a00\u5c0f\u6eaaenncy","title":"OCS\u4f5c\u8005\u53ca\u6587\u6863\u7ef4\u62a4\u4eba\u5458","url":"https://github.com/enncy","imageURL":"https://github.com/enncy.png","key":"authors","page":null,"count":1}]}')}}]);
