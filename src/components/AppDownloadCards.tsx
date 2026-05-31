@@ -57,7 +57,6 @@ export const AppDownloadCards = () => {
     const [current_url, setCurrentUrl] = React.useState<string | null>(null);
 
     const ua_result = new UAParser().getResult()
-    console.log(ua_result);
     const current_platform = ua_result.os.name || 'Other'
 
 
