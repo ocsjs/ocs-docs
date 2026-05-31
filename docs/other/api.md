@@ -29,21 +29,21 @@ tags:
 
 > OCS 提供了强大的 [`题库配置解析器`](https://github.com/enncy/online-course-script/blob/3.0/packages/scripts/src/browser/core/worker/answer.wrapper.handler.ts)，你可以对接大多数的题库进行使用
 
-**类型** : Array\<[`AnswererWrapper`](#answererwrapper)\>
+**类型** : Array\<[`AnswererWrapper`](#AnswererWrapper)\>
 
 **参数** :
 
-| 参数        | 类型                           | 必填 | 说明                                                                                                                                                  |
-| ----------- | ------------------------------ | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| url         | string                         | 是   | 请求路径，可已解析[特殊占位符](#特殊占位符)                                                                                                           |
-| name        | string                         | 是   | 题库名字                                                                                                                                              |
-| homepage    | string                         | 否   | 题库网址                                                                                                                                              |
-| data        | Record\<string, string\>       | 否   | 传递的参数, get 请求将会添加到 url 后面， post 请求会生成请求体 ， 可已解析[特殊占位符](#特殊占位符) ， 或者[自定义字段解析方法](#自定义字段解析方法) |
-| method      | "post" \| "get"                | 否   | 默认 `get` , 请求方法                                                                                                                                 |
-| contentType | "json" \| "text"               | 否   | 默认 `json` , 定义 handler 中的参数类型                                                                                                               |
-| type        | "fetch" \| "GM_xmlhttpRequest" | 否   | 默认 `fetch` , 请求类型, `fetch` 是用浏览器原生 API， `GM_xmlhttpRequest` 使用油猴自带 API , 可进行跨域。                                             |
-| headers     | Record\<string, string\>       | 否   | 默认 `{}`                                                                                                                                             |
-| handler     | string                         | 是   | 详情请看下面说明                                                                                                                                      |
+| 参数        | 类型                           | 必填 | 说明                                                                                                                                                    |
+| ----------- | ------------------------------ | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| url         | string                         | 是   | 请求路径，可已解析[特殊占位符](#特殊占位符)                                                                                                             |
+| name        | string                         | 是   | 题库名字                                                                                                                                                |
+| homepage    | string                         | 否   | 题库网址                                                                                                                                                |
+| data        | Record\<string, string\>       | 否   | 传递的参数, get 请求将会添加到 url 后面， post 请求会生成请求体 ， 可已解析[特殊占位符](#特殊占位符) ， 或者[自定义字段解析方法](#custom-field-handler) |
+| method      | "post" \| "get"                | 否   | 默认 `get` , 请求方法                                                                                                                                   |
+| contentType | "json" \| "text"               | 否   | 默认 `json` , 定义 handler 中的参数类型                                                                                                                 |
+| type        | "fetch" \| "GM_xmlhttpRequest" | 否   | 默认 `fetch` , 请求类型, `fetch` 是用浏览器原生 API， `GM_xmlhttpRequest` 使用油猴自带 API , 可进行跨域。                                               |
+| headers     | Record\<string, string\>       | 否   | 默认 `{}`                                                                                                                                               |
+| handler     | string                         | 是   | 详情请看下面说明                                                                                                                                        |
 
 `handler` 选项是个字符串 ， 使用 Function(string) 构造方法进行解析生成方法，方法传入的第一个参数是 `请求获取到的文本/数据（使用 contentType 定义的数据）`
 
@@ -54,7 +54,7 @@ tags:
     - 例子： `return (res)=> res.code === 1 ? [res.question,res.answer.join('#')] : undefined` ， 使用 `join` 方法将数组转换成字符串 。
   - `【重要】`需要将题库配置中 homepage 以及 url 所涉及到的域名，在到脚本头部元信息 `@connect` 中新增域名，否则无法请求到数据。
     - 例子： url 是 https://example.com/search 则需要添加对应的元信息 `@connect example.com`，或者在脚本管理器设置中找到 `@connect 模式：`， 将其设置为宽松模式。 更多详情请查看油猴跨域 API: `https://www.tampermonkey.net/documentation.php#meta:connect`，
-  - 如果不想手动配置 @connect 可以安装官方打包的 [【全域名通用版本】](#全域名通用版本) ，但是请求时会出现弹窗，可以让用户可以选择允许全部域名进行请求。
+  - 如果不想手动配置 @connect 可以安装官方打包的 [【全域名通用版本】](#common-version) ，但是请求时会出现弹窗，可以让用户可以选择允许全部域名进行请求。
 
 ---
 
@@ -234,7 +234,7 @@ defaultAnswerWrapperHandler(
       },
       // ...
     },
-  ]
+  ],
 );
 ```
 

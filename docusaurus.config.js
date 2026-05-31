@@ -60,7 +60,11 @@ const config = {
   url: 'https://ocsjs.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn'
+    }
+  },
   favicon: 'https://cdn.ocsjs.com/logo.ico',
   staticDirectories: ['public', 'static'],
   scripts: [
