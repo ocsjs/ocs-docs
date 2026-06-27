@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import styles from './index.module.css';
 
+const floatButtons = [
+    { label: '❓ 如何关闭脚本', href: '/docs/script#update-and-manage', top: '5%', left: '2%', rotate: -7, fontSize: 0.92, opacity: 0.85, delay: 0, duration: 5.2 },
+    { label: '📥 如何下载脚本', href: '/docs/script', top: '3%', left: '66%', rotate: 5, fontSize: 0.78, opacity: 0.7, delay: 1.3, duration: 4.8 },
+    { label: '💻 怎么下载软件', href: '/docs/app', top: '72%', left: '0%', rotate: 3, fontSize: 0.84, opacity: 0.75, delay: 0.7, duration: 5.5 },
+    { label: '🔄 如何更新', href: '/docs/update', top: '68%', left: '70%', rotate: -4, fontSize: 0.72, opacity: 0.82, delay: 2.1, duration: 4.5 },
+];
 
 const showCases = [
     {
@@ -102,7 +108,27 @@ const HomePage: React.FC = () => {
                     </div>
                 </div>
                 <div className={styles.heroVisual}>
-                    <img className={styles.heroVisualLogo} width={'50%'} src="/logos/ocs.png" ></img>
+                    <div className={styles.logoWrapper}>
+                        <img className={styles.heroVisualLogo} width={'50%'} src="/logos/ocs.png" alt="OCS" />
+                        {floatButtons.map((btn, i) => (
+                            <a
+                                key={i}
+                                href={btn.href}
+                                className={styles.floatBtn}
+                                style={{
+                                    top: btn.top,
+                                    left: btn.left,
+                                    fontSize: `${btn.fontSize}rem`,
+                                    opacity: btn.opacity,
+                                    rotate: `${btn.rotate}deg`,
+                                    animationDelay: `${btn.delay}s`,
+                                    animationDuration: `${btn.duration}s`,
+                                }}
+                            >
+                                {btn.label}
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </section>
 

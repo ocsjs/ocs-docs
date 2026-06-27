@@ -218,6 +218,15 @@
   align-items: center;
 }
 
+.logoWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 480px;
+  height: 420px;
+}
+
 .heroVisualLogo {
   width: 256px;
   height: 256px;
@@ -225,6 +234,46 @@
   position: relative;
   animation: float 6s ease-in-out infinite;
   box-shadow: 0 20px 60px rgba(255, 255, 255, 0.63);
+  z-index: 1;
+}
+
+/* 词云风格悬浮按钮 */
+.floatBtn {
+  position: absolute;
+  padding: 12px 24px;
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--light-text-primary);
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+  /* 与 logo 同步的浮动动画 */
+  animation: floatCloud 6s ease-in-out infinite;
+  color: black;
+}
+
+.floatBtn:hover {
+  background: rgb(255, 255, 255);
+  border-color: rgba(197, 197, 197, 0.7);
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 1 !important;
+  box-shadow: 0 4px 20px rgba(0, 102, 255, 0.45);
+}
+
+/* 与 logo 的 float 动画同步，方向一致 */
+@keyframes floatCloud {
+  0%,
+  100% {
+    translate: 0 0px;
+  }
+  50% {
+    translate: 0 -20px;
+  }
 }
 
 @keyframes float {
@@ -493,6 +542,15 @@
     gap: 1rem;
     text-align: center;
   }
+
+  .logoWrapper {
+    width: 360px;
+    height: 320px;
+  }
+
+  .floatBtn {
+    font-size: 0.72rem !important;
+  }
 }
 
 @media (max-width: 640px) {
@@ -511,6 +569,15 @@
 
   .footerLinks {
     grid-template-columns: 1fr;
+  }
+
+  .logoWrapper {
+    width: 280px;
+    height: 260px;
+  }
+
+  .floatBtn {
+    font-size: 0.62rem !important;
   }
 }
 
