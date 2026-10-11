@@ -724,11 +724,11 @@ h2.anchor {
   opacity: 1;
 }
 
-/* 快捷更新/安装弹窗 */
+/* 快捷更新/安装弹窗（z-index 需低于 MUI Dialog 的 1300，避免遮挡安装确认弹窗） */
 .quick-install-modal {
   position: fixed;
   inset: 0;
-  z-index: 2000;
+  z-index: 1200;
   display: flex;
   align-items: center;
   justify-content: center;
