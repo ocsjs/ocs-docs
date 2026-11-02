@@ -58,11 +58,19 @@ title: 疑问解答
 
 例如：
 
-你的学校超星网站为 `https://xxxxx.net/xxxx` ，那么 `xxxxx.net` 这个就是网站域名
+你的学校超星网站为 `https://abcd.net/xxxx` ，那么 `abcd.net` 这个就是网站域名， 解决方法：
 
-1.打开右上角的脚本管理器，并且打开脚本进行编辑。
+#### 与开发人员反馈
 
-2.在代码里面添加 `// @match *://*.[网站域名]/*` （把括号里面替换成真实域名）
+1. 前往界面加群，然后私信联系管理员告知需要新增的域名
+
+2. 等待下个ocs版本适配新的域名，最后更新脚本即可
+
+#### 或者手动尝试修改代码，进行域名适配：
+
+1. 打开右上角的脚本管理器，并且打开脚本进行编辑。
+
+2. 在代码里面添加 `// @match *://*.[网站域名]/*` （把括号里面替换成真实域名）
 
 例子 :
 
@@ -77,18 +85,54 @@ title: 疑问解答
 // @match      				*://*.chaoxing.com/*
 // @match      				*://*.edu.cn/*
 // @match      				*://*.org.cn/*
-// @match                   *://*.xxxxx.net/*                         <-- 回车新建一行，然后在这一行写
+// @match                   *://*.abcd.net/*                         <-- 回车新建一行，然后在这一行写
 // @grant      				GM_info
 // @grant      				GM_getTab
 ...
 ...
 ...
-... 剩下代码不用动
 ```
 
-3.添加后，点击左上角的“编辑-保存”
+3. 在代码中搜索 chaoxing.com 域名，找到下列类似的代码
 
-4.重新进入超星页面即可
+```js
+const CXProject = lib.Project.create({
+    name: "超星学习通",
+    domains: [
+      "chaoxing.com",
+      "edu.cn",
+      "org.cn",
+      "xueyinonline.com",
+      "hnsyu.net",
+      "qutjxjy.cn",
+      "ynny.cn",
+      "hnvist.cn",
+      xxxx...
+    ],
+```
+
+4. 在 domains 下面增加一行域名：
+
+```js
+const CXProject = lib.Project.create({
+    name: "超星学习通",
+    domains: [
+      "abcd.net",  // <-  新增的域名在这编写
+      "chaoxing.com",
+      "edu.cn",
+      "org.cn",
+      "xueyinonline.com",
+      "hnsyu.net",
+      "qutjxjy.cn",
+      "ynny.cn",
+      "hnvist.cn",
+      xxxx...
+    ],
+```
+
+5. 添加后，点击左上角的“编辑-保存”
+
+6. 重新进入超星页面即可
 
 ### `为什么开了倍速没反应`
 
