@@ -188,7 +188,9 @@ h2.anchor {
   background-color: var(--ifm-color-emphasis-500);
   -webkit-mask: url("/img/icons/external-link.svg") no-repeat center / contain;
   mask: url("/img/icons/external-link.svg") no-repeat center / contain;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .platform-link:hover {
@@ -251,10 +253,6 @@ h2.anchor {
 .tutorial-card-link:hover {
   background: var(--ifm-color-primary-dark);
 }
-
-
-
-
 
 /* 简介页头部：图标 + 文本 左右布局 */
 .about-header {
@@ -512,7 +510,9 @@ h2.anchor {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 1px 3px rgba(16, 24, 40, 0.05);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .img-preview-item:hover {
@@ -654,6 +654,15 @@ h2.anchor {
   width: 100%;
 }
 
+/* 视频上方描述文本 */
+.docs-video-desc {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+}
+
 /* 右上角放大按钮 */
 .docs-video-expand {
   position: absolute;
@@ -671,7 +680,9 @@ h2.anchor {
   font-size: 1rem;
   cursor: pointer;
   opacity: 0;
-  transition: opacity 0.2s ease, background 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    background 0.2s ease;
   z-index: 2;
 }
 

@@ -11,7 +11,7 @@ import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 
 
 export const CURRENT_OCS_VERSION = '3.9.1'
-export const BASE_OCS_DOWNLOAD_PATH = `https://cdn.ocsjs.com/app/electron-updater/`
+export const BASE_OCS_DOWNLOAD_PATH = `https://cdn.ocsjs.com/app/electron-updater`
 
 
 
