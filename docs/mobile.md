@@ -42,4 +42,4 @@ import DocsVideo from '../src/components/DocsVideo.tsx';
 
 :::
 
-<DocsVideo src="https://cdn.ocsjs.com/public/mobile_guide.mp4" poster="https://cdn.ocsjs.com/public/video_guide_mobile_poster.png" maxHeight="600px" />
+<DocsVideo src="https://cdn.ocsjs.com/public/mobile_guide.mp4" posterFrame={50} maxHeight="600px" />

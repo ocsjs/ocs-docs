@@ -11,6 +11,10 @@ interface DocsVideoProps {
     className?: string;
     /** 视频上方描述文本，不传则不显示 */
     desc?: string;
+    /** 封面帧位置（帧序号，如 10 表示第 10 帧）。仅在未传 poster 时生效，默认第 1 帧 */
+    posterFrame?: number;
+    /** 视频帧率，用于 posterFrame 换算时间，默认 30 */
+    posterFps?: number;
 }
 
 /**
@@ -19,7 +23,7 @@ interface DocsVideoProps {
  * - 放大/关闭时同步播放进度与播放状态
  * - 背景点击 / ✕ / ESC 关闭
  */
-const DocsVideo: React.FC<DocsVideoProps> = ({ src, poster, width, maxHeight, className, desc }) => {
+const DocsVideo: React.FC<DocsVideoProps> = ({ src, poster, width, maxHeight, className, desc, posterFrame, posterFps = 30 }) => {
     const [expanded, setExpanded] = useState(false);
     const smallRef = useRef<HTMLVideoElement>(null);
     const bigRef = useRef<HTMLVideoElement>(null);
@@ -50,13 +54,14 @@ const DocsVideo: React.FC<DocsVideoProps> = ({ src, poster, width, maxHeight, cl
         return () => window.removeEventListener('keydown', onKeyDown);
     }, [expanded]);
 
-    // 无 poster 时定位到首帧作为封面
-    const showFirstFrame = (e: React.SyntheticEvent<HTMLVideoElement>) => {
+    // 无 poster 时定位到指定帧（默认第 1 帧）作为封面
+    const showCoverFrame = (e: React.SyntheticEvent<HTMLVideoElement>) => {
         if (poster) return;
         const video = e.currentTarget;
-        if (video.currentTime === 0) {
-            video.currentTime = 0.1;
-        }
+        if (video.currentTime !== 0) return;
+        // 帧序号换算为秒，并留出余量避免落到前一帧
+        const t = ((posterFrame ?? 1) + 0.5) / posterFps;
+        video.currentTime = video.duration ? Math.min(t, Math.max(0, video.duration - 0.1)) : t;
     };
 
     // 关闭时把进度同步回原视频
@@ -82,7 +87,7 @@ const DocsVideo: React.FC<DocsVideoProps> = ({ src, poster, width, maxHeight, cl
                         poster={poster || undefined}
                         controls
                         preload={poster ? 'none' : 'metadata'}
-                        onLoadedData={showFirstFrame}
+                        onLoadedData={showCoverFrame}
                         style={maxHeight ? { height: maxHeight, width: '100%', objectFit: 'contain', background: '#000' } : undefined}
                     />
                     <button className="docs-video-expand" title="放大查看" aria-label="放大查看" onClick={() => setExpanded(true)}>
@@ -99,7 +104,7 @@ const DocsVideo: React.FC<DocsVideoProps> = ({ src, poster, width, maxHeight, cl
                         src={src}
                         poster={poster || undefined}
                         controls
-                        onLoadedData={showFirstFrame}
+                        onLoadedData={showCoverFrame}
                         onClick={(e) => e.stopPropagation()}
                     />
                 </div>
