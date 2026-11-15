@@ -792,13 +792,13 @@ h2.anchor {
   overflow-y: auto;
 }
 
-/* 半宽视频：小屏下自动铺满 */
-.docs-video-half {
-  width: 50%;
+/* 小尺寸视频（75% 宽）：小屏下自动铺满 */
+.docs-video-small {
+  width: 75%;
 }
 
 @media (max-width: 768px) {
-  .docs-video-half {
+  .docs-video-small {
     width: 100%;
   }
 }
