@@ -357,6 +357,12 @@
   font-size: 0.8rem;
   font-weight: 500;
   pointer-events: none;
+  transition: opacity 3s ease;
+}
+
+/* 视频开始播放后角标 3s 渐隐 */
+.videoBadgeFading {
+  opacity: 0;
 }
 
 .videoTabs {
@@ -412,6 +418,13 @@
 }
 
 /* 视频画面填满 16:9 容器：横屏铺满，竖屏居中留边，保证三个视频外框一致 */
+/* 修复竖屏视频溢出：中间包裹层默认高度 auto，导致 video height:100% 失效，
+   竖屏视频按自然高度渲染溢出容器、底部播放控制条被裁剪无法点击。
+   让包裹层占满 16:9 容器，video 才能按容器高度 contain（两侧黑边）。 */
+.videoPlayer :global(.docs-video-wrapper) {
+  height: 100%;
+}
+
 .videoPlayer video {
   width: 100%;
   height: 100%;

@@ -80,14 +80,16 @@ const HomePage: React.FC = () => {
 
     // 视频教程：与各教程文档（app/script/mobile）中的视频一致
     const videos = [
-        { key: 'app', label: '🖥️ 桌面版', src: 'https://cdn.ocsjs.com/public/desktop_guide.mp4', poster: 'https://cdn.ocsjs.com/public/vide_guide_desktop_poster.png' },
-        { key: 'script', label: '🌐 网页版', src: 'https://cdn.ocsjs.com/public/script_guide.mp4', poster: 'https://cdn.ocsjs.com/public/video_guide_poster.png' },
+        { key: 'app', label: '🖥️ 桌面版', src: '/videos/app_guide_video.mp4' },
+        { key: 'script', label: '🌐 网页版', src: '/videos/script_install_total_guide.mp4' },
         { key: 'mobile', label: '📱 手机&平板', src: 'https://cdn.ocsjs.com/public/mobile_guide.mp4', poster: 'https://cdn.ocsjs.com/public/video_guide_mobile_poster.png' }
     ];
     // 根据分辨率自动选择默认教程：小于 1k 宽度默认显示手机&平板教程
     const [activeVideo, setActiveVideo] = useState(() =>
         typeof window !== 'undefined' && window.innerWidth < 1000 ? 'mobile' : 'app'
     );
+    // 已开始播放的视频 key（用于“视频教程”角标渐隐）
+    const [playingVideos, setPlayingVideos] = useState<ReadonlySet<string>>(new Set());
     const videoAreaRef = useRef<HTMLDivElement>(null);
 
     // 切换视频时暂停其他视频，避免后台继续播放消耗流量
@@ -218,8 +220,11 @@ const HomePage: React.FC = () => {
                             <div
                                 key={v.key}
                                 className={`${styles.videoWrapper} ${activeVideo === v.key ? '' : styles.videoPlayerHidden}`}
+                                onPlayCapture={() =>
+                                    setPlayingVideos((prev) => (prev.has(v.key) ? prev : new Set(prev).add(v.key)))
+                                }
                             >
-                                <span className={styles.videoBadge}>视频教程</span>
+                                <span className={`${styles.videoBadge} ${playingVideos.has(v.key) ? styles.videoBadgeFading : ''}`}>视频教程</span>
                                 <DocsVideo
                                     className={styles.videoPlayer}
                                     src={v.src}
